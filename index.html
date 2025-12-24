@@ -172,7 +172,7 @@
             s.innerText = 'Validando cuenta...';
 
             try {
-                const res = await fetch('https://flixy-rd.pages.dev/user/usuarios.m3u' + Date.now());
+                const res = await fetch('https://flixy-rd.pages.dev/user/usuarios.m3u?t=' + Date.now());
                 const text = await res.text();
 
                 const bloques = text.split('#EXTM3U').filter(bl => bl.trim() !== "");
@@ -245,5 +245,4 @@
         });
     </script>
 </body>
-
 </html>
