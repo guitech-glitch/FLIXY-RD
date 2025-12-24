@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <style>
         :root { 
-            --accent: #ff0000; 
+            --accent: #ff0000; /* ROJO PRINCIPAL */
             --bg: #000000; 
             --card: #121212; 
             --header-bg: #000000;
             --heart-red: #ff4b4b;
-            --playing-bg: rgba(255, 0, 0, 0.15);
+            --playing-bg: rgba(255, 0, 0, 0.2); /* FILTRO ROJO TRANSPARENTE */
         }
 
         body { 
@@ -28,12 +28,12 @@
             top: 0;
             z-index: 1000;
             background: var(--header-bg);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.8);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.8);
         }
 
         .video-container {
             width: 100%;
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
         }
 
@@ -46,8 +46,8 @@
             display: flex; 
             overflow-x: auto; 
             background: #0f0f0f; 
-            padding: 8px 5px; 
-            gap: 5px; 
+            padding: 12px 10px; 
+            gap: 8px; 
             border-bottom: 1px solid #222;
             scrollbar-width: none;
         }
@@ -55,15 +55,15 @@
         .category-nav::-webkit-scrollbar { display: none; }
 
         .cat-btn { 
-            background: #1a1a1a; 
-            color: #ccc; 
+            background: #222; 
+            color: #fff; 
             border: none; 
-            padding: 6px 12px; 
-            border-radius: 3px; 
+            padding: 8px 18px; 
+            border-radius: 4px; 
             cursor: pointer; 
             white-space: nowrap; 
             font-weight: bold;
-            font-size: 0.65rem; /* Fuente más pequeña */
+            font-size: 0.75rem;
             text-transform: uppercase;
         }
 
@@ -77,48 +77,48 @@
             margin: 0 auto;
         }
 
-        /* FILA MÁS PEQUEÑA (Altura reducida de 75px a 50px) */
         .card { 
             display: flex;
             align-items: center;
             background: var(--card); 
-            height: 50px; 
-            border-bottom: 1px solid #1a1a1a;
+            height: 75px;
+            border-bottom: 1px solid #222;
             cursor: pointer; 
-            transition: all 0.1s ease;
-            padding: 0 12px;
+            transition: all 0.2s ease;
+            padding: 0 20px;
         }
 
+        /* RESALTADO ROJO PARA CANAL ACTIVO */
         .card.playing {
             background: var(--playing-bg);
-            border-left: 3px solid var(--accent);
-            padding-left: 9px;
+            border-left: 5px solid var(--accent);
+            padding-left: 15px;
         }
 
-        .card.playing .program-name { color: #ff6666; }
+        .card.playing .program-name {
+            color: #ff6666; /* Rojo claro para el texto */
+        }
 
         .card:hover:not(.playing) { background: #1a1a1a; }
 
-        /* Número más pequeño */
         .channel-number {
-            width: 30px;
-            font-weight: normal;
-            color: #555;
-            font-size: 0.75rem;
+            width: 45px;
+            font-weight: bold;
+            color: #666;
+            font-size: 0.9rem;
             flex-shrink: 0;
         }
 
-        /* Logo más pequeño */
         .logo-wrap { 
-            width: 50px;
-            height: 35px; 
+            width: 80px;
+            height: 50px; 
             display: flex; 
             align-items: center; 
             justify-content: center; 
-            background: #000; 
-            border-radius: 3px;
-            margin: 0 10px;
-            padding: 3px;
+            background: #1a1a1a; 
+            border-radius: 4px;
+            margin: 0 15px;
+            padding: 5px;
             flex-shrink: 0;
         }
 
@@ -126,33 +126,29 @@
 
         .channel-info { flex-grow: 1; overflow: hidden; }
 
-        /* Nombre del canal más pequeño */
         .program-name {
-            font-weight: 500;
-            font-size: 0.9rem;
+            font-weight: bold;
+            font-size: 1.1rem;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
         }
 
-        /* Corazón más pequeño */
         .fav-btn {
-            padding: 10px;
+            padding: 15px;
             cursor: pointer;
-            font-size: 1rem;
-            color: #222;
+            font-size: 1.4rem;
+            color: #333;
             transition: transform 0.2s, color 0.2s;
         }
 
         .fav-btn.active { color: var(--heart-red); }
 
-        .status { text-align: center; padding: 20px; color: var(--accent); font-size: 0.8rem; }
+        .status { text-align: center; padding: 40px; color: var(--accent); }
 
         @media (max-width: 600px) {
-            .card { padding: 0 8px; height: 45px; }
-            .logo-wrap { width: 45px; margin: 0 8px; }
-            .channel-number { width: 25px; font-size: 0.7rem; }
-            .program-name { font-size: 0.85rem; }
+            .card { padding: 0 10px; }
+            .logo-wrap { width: 65px; margin: 0 10px; }
         }
     </style>
 </head>
@@ -165,32 +161,24 @@
 
         <div class="category-nav" id="cats">
             <button class="cat-btn active" onclick="filter('TODOS', this)">TODOS</button>
-            <button class="cat-btn" onclick="filter('FAVORITOS', this)" style="color: var(--heart-red)">❤️</button>
+            <button class="cat-btn" onclick="filter('FAVORITOS', this)" style="color: var(--heart-red)">❤️ FAVS</button>
         </div>
     </div>
 
-    <div id="status" class="status">Cargando...</div>
+    <div id="status" class="status">Cargando canales...</div>
     <div class="grid" id="grid"></div>
 
     <script src="https://vjs.zencdn.net/8.3.0/video.min.js"></script>
     <script>
         const M3U_URL = 'https://flixy-rd.pages.dev/admin/channel.m3u';
-        const player = videojs('tv-player', {
-    fluid: true,
-    html5: {
-        hls: {
-            overrideNative: true,
-            lowLatencyMode: true, // Activa modo de baja latencia
-            enableLowInitialPlaylistLevel: true, // Carga la calidad más baja primero para rapidez
-        }
-    }
-});
+        const player = videojs('tv-player', { fluid: true });
+        let allChannels = [];
         let favorites = JSON.parse(localStorage.getItem('flixy_favs')) || [];
         let currentUrl = "";
 
         async function init() {
             try {
-                let response = await fetch(M3U_URL).catch(() => fetch('https://wefetchproxy.jhonielproyectos.workers.dev/?url=' + encodeURIComponent(M3U_URL)));
+                let response = await fetch(M3U_URL).catch(() => fetch('https://corsproxy.io/?' + encodeURIComponent(M3U_URL)));
                 const text = await response.text();
                 parse(text);
                 document.getElementById('status').style.display = 'none';
@@ -256,6 +244,7 @@
                     currentUrl = ch.url;
                     document.querySelectorAll('.card').forEach(c => c.classList.remove('playing'));
                     div.classList.add('playing');
+
                     player.src({ src: ch.url, type: 'application/x-mpegURL' });
                     player.play();
                     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -272,7 +261,7 @@
             localStorage.setItem('flixy_favs', JSON.stringify(favorites));
             
             const activeBtn = document.querySelector('.cat-btn.active');
-            if(activeBtn && activeBtn.innerText.includes('FAVS') || activeBtn.innerHTML.includes('❤️')) {
+            if(activeBtn && activeBtn.innerText.includes('FAVS')) {
                 render(allChannels.filter(ch => favorites.includes(ch.id)));
             } else {
                 e.target.classList.toggle('active');
@@ -284,6 +273,7 @@
         function filter(c, btn) {
             document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
+            
             if (c === 'FAVORITOS') {
                 render(allChannels.filter(ch => favorites.includes(ch.id)));
             } else {
