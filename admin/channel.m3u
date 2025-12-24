@@ -897,8 +897,6 @@ https://5ca3e84a76d30.streamlock.net:443/gpacifico3/smil:obregon.smil/playlist.m
 https://60417ddeaf0d9.streamlock.net:443/montemorelos/videomontemorelos/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/1042_AMX_MÉXICO.png" group-title="MÉXICO",AMX MÉXICO
 https://5e50264bd6766.streamlock.net/mexiquense2/videomexiquense2/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/1174_Canal_66_El_Canal_de_las_MÉXICO.png" group-title="MÉXICO",Canal 66 El Canal de las MÉXICO
-https://60417ddeaf0d9.streamlock.net:443/canal66/smil:canal66.smil/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/865_Alcance_TV.png" group-title="MÉXICO",Alcance TV
 https://5bf8041cb3fed.streamlock.net:443/AlcanceTV/AlcanceTV/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/143_Canal_Once_Del_Zulia.png" group-title="VENEZUELA",Canal Once Del Zulia
