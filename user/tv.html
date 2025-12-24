@@ -175,7 +175,16 @@
     <script src="https://vjs.zencdn.net/8.3.0/video.min.js"></script>
     <script>
         const M3U_URL = 'https://flixy-rd.pages.dev/admin/channel.m3u';
-        const player = videojs('tv-player', { fluid: true });
+       const player = videojs('tv-player', {
+    fluid: true,
+    html5: {
+        hls: {
+            overrideNative: true,
+            lowLatencyMode: true, // Activa modo de baja latencia
+            enableLowInitialPlaylistLevel: true, // Carga la calidad más baja primero para rapidez
+        }
+    }
+});
         let allChannels = [];
         let favorites = JSON.parse(localStorage.getItem('flixy_favs')) || [];
         let currentUrl = "";
@@ -286,4 +295,5 @@
         init();
     </script>
 </body>
+
 </html>
