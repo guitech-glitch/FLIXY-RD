@@ -19,7 +19,7 @@ http://199.127.63.105:9090/278476_.m3u8
 https://xumo-drct-ch835-ekq0p.fast.nbcuni.com/live/master.m3u8
 #EXTINF:-1 tvg-logo="https://static0.srcdn.com/wordpress/wp-content/uploads/2025/05/starz-edge-1200-x-674-network-logo.png?q=70&fit=crop&w=1200&h=628&dpr=1" group-title="OTROS",STARZ
 http://tv.diablotv.net:8080/CanalesIprotvPro/U3XdSbjMVb/86009
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/Y0KsKMk5/st-ch.png" group-title="OTROS",STAR CHANEL
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/Y0KsKMk5/st-ch.png" group-title="CINE",STAR CHANEL
 http://tv.diablotv.net:8080/CanalesIprotvPro/U3XdSbjMVb/9723
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsFLa_-8vVCurp6brHD0NjI6wLPHp3xqY6FDyoikOFAuxewhSuacxHnuA&s=10" group-title="OTROS",GOLDEN
 http://104.194.8.54:9090/278479_.m3u8
