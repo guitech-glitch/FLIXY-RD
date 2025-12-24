@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLIXY RD - Player</title>
+    <style>
+        :root {
+            --azul-brillante: #0070f3;
+            --fondo: #050505;
+            --gris-navbar: rgba(18, 18, 18, 0.95);
+            --rojo-error: #ff4d4d;
+        }
+
+        /* Configuración para que el cuerpo no tenga scroll propio */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden; 
+            font-family: 'Inter', sans-serif;
+            background-color: var(--fondo);
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Navbar Moderno */
+        .navbar {
+            background: var(--gris-navbar);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 0 25px;
+            height: 65px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            flex-shrink: 0; /* Evita que el menú se encoja */
+            z-index: 100;
+        }
+
+        .logo-img {
+            height: 35px;
+            width: auto;
+        }
+
+        .right-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .user-box {
+            text-align: right;
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+            padding-right: 15px;
+        }
+
+        .user-name {
+            display: block;
+            color: white;
+            font-weight: 600;
+            font-size: 13px;
+        }
+
+        .days-badge {
+            font-size: 9px;
+            color: var(--azul-brillante);
+            background: rgba(0, 112, 243, 0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .logout-btn {
+            background: transparent;
+            border: 1px solid var(--rojo-error);
+            color: var(--rojo-error);
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .logout-btn:hover {
+            background: var(--rojo-error);
+            color: white;
+        }
+
+        /* Contenedor del Iframe (Contenido Principal) */
+        .content-container {
+            flex-grow: 1; /* Toma todo el espacio sobrante */
+            width: 100%;
+            border: none;
+            position: relative;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="https://flixy-rd.pages.dev/img/img.jpg" alt="Logo" class="logo-img">
+        </div>
+        
+        <div class="right-section">
+            <div class="user-box">
+                <span class="user-name" id="display-user">Usuario</span>
+                <span class="days-badge" id="display-days">...</span>
+            </div>
+            <button class="logout-btn" onclick="logout()">Salir</button>
+        </div>
+    </nav>
+
+    <div class="content-container">
+        <iframe src="user/tv.html" title="TV Content" allowfullscreen></iframe>
+    </div>
+
+    <script>
+        function logout() {
+            localStorage.clear();
+            window.location.href = 'index.html';
+        }
+
+        window.onload = function() {
+            const user = localStorage.getItem('usuarioFlixy');
+            const expira = localStorage.getItem('expiraFlixy');
+
+            if (!user) {
+                window.location.href = 'index.html';
+                return;
+            }
+
+            document.getElementById('display-user').innerText = user.toUpperCase();
+
+            const fechaExp = new Date(expira);
+            const hoy = new Date();
+            const diferenciaMs = fechaExp - hoy;
+            const diasRestantes = Math.ceil(diferenciaMs / (1000 * 60 * 60 * 24));
+
+            const displayDays = document.getElementById('display-days');
+            if (diasRestantes > 0) {
+                displayDays.innerText = `${diasRestantes} DÍAS`;
+            } else {
+                displayDays.innerText = `VENCIDO`;
+                displayDays.style.color = '#ff4d4d';
+            }
+        };
+    </script>
+</body>
+</html>
