@@ -1,3 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://www.tvplusgratis2.com/imge/liga1max.png" group-title="DEPORTES",Liga 1 Max
-https://deportes.ksdjugfsddeports.com:9092/MTkwLjI0Mi41OC4xNTA=/27_.m3u8?token=2XQaNH1fn-qX3bVpw0HJDQ&expires=1766617760
+#EXTINF:-1 tvg-logo="https://www.tvplusgratis2.com/imge/golperu.png" group-title="DEPORTES",GOL PERU
+https://deportes.ksdjugfsddeports.com:9092/MTkwLjI0Mi41OC4xNTA=/2_.m3u8?token=6Q1LTOjEM_ysuTl9hs_22w&expires=1766617880
+#EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/5dcde437229eff00091b6c30/thumbnail_1759246117588.jpg" group-title="PLUTO TV",CINE ESTELAR
+https://siloh-ns1.plutotv.net/745_pluto/clip/6936e0f3779bf41d1d4731be_42c471fc_6124_408d_ab43_2a7aaf6faf94/720pDRM/20251208_143011/hls/2330691-2904561/hls_2400-00099.ts?CMCD=bl%3D31100%2Cbr%3D3321%2Cd%3D5000%2Cmtp%3D38800%2Cot%3Dv%2Csf%3Dh%2Csid%3D%22805474cd-49b4-4166-8038-26e4a7395241%22%2Ctb%3D3321
