@@ -13,8 +13,6 @@ https://tv.streaming-chile.com:19360/8134/8134.m3u8
 https://tv.streaming-chile.com:19360/8068/8068.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/IHVHNE4.png" group-title="TV PREMIUM",DreikoTV
 https://rtv.fullhd-streaming.com:19360/dreikotv/dreikotv.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/IHVHNE4.png" group-title="TV PREMIUM",Adult Swim
-http://181.78.208.25:8000/play/a02m/index.m3u8
 #EXTINF:-1 tvg-logo="" group-title="TV PREMIUM",UNIVERSAL CRIME
 http://clubtv.link/21d12/phpcode/lista0.php?c=32&token=tecnotokenplustv&f=.m3u8
 #EXTINF:-1 tvg-logo="" group-title="TV PREMIUM",UNIVERSAL CINEMA
