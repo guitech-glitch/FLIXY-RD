@@ -1,81 +1,194 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://bestleague.world/img/espn3.webp" group-title="DEPORTES",ESPN 3 MX
-https://8c51.crackstreamslivehd.com/espn3mx/tracks-v1a1/mono.m3u8?ip=190.242.58.150&token=5ce68315df7dc93713c832c8294f851acb87c0be-ee-1766591597-1766537597
-#EXTINF:-1 tvg-logo="https://imgur.com/IHVHNE4.png" group-title="TV PREMIUM",DreikoTV
-https://rtv.fullhd-streaming.com:19360/dreikotv/dreikotv.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/GY750xh.jpg" group-title="MUSICA",98.1 Pearl FM (720p)
-https://live2.tensila.com/pearl-v-1.pearlfm/hls/live/mystream.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/y4kNV3Q.png" group-title="MUSICA",70-80 TV (1080P)
-https://585b674743bbb.streamlock.net/9050/9050/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/gNWg9tl.png" group-title="MUSICA",30A Music Channel
-https://30a-tv.com/feeds/ceftech/30atvmusic.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/hTUe0Pw.png" group-title="MUSICA",13 Festival (1080p)
-https://origin.dpsgo.com/ssai/event/Nftd0fM2SXasfDlRphvUsg/master.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/Egijzx3.png" group-title="MUSICA",Steelbird Music
-http://cdn25.live247stream.com/steelbirdmusic/tv/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/FBgu8yB.png" group-title="MUSICA",Stingray Classic Rock
-https://lotus.stingray.com/manifest/ose-101ads-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/nh1k5RC.png" group-title="MUSICA",Stingray Classica
-https://lotus.stingray.com/manifest/classica-cla008-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/3UppN5P.png" group-title="MUSICA",Stingray CMusic
-https://lotus.stingray.com/manifest/cmusic-cme004-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Stingray_Djazz.png/512px-Stingray_Djazz.png" group-title="MUSICA",Stingray DJAZZ
-https://lotus.stingray.com/manifest/djazz-djaads-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Stingray_Music_logo.svg/512px-Stingray_Music_logo.svg.png" group-title="MUSICA",Stingray Easy Listening
-https://lotus.stingray.com/manifest/ose-137ads-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/jf5C9QF.png" group-title="MUSICA",Stingray Flashback 70s
-https://lotus.stingray.com/manifest/ose-115ads-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/lgpIwId.png" group-title="MUSICA",Stingray Hit List
-https://lotus.stingray.com/manifest/ose-107ads-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/4xVVKH8.png" group-title="MUSICA",Stingray Holiday Hits
-https://lotus.stingray.com/manifest/ose-155ads-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/PZhxyIT.png" group-title="MUSICA",Stingray Hot Country
-https://lotus.stingray.com/manifest/ose-108ads-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/9TLTLS3.png" group-title="MUSICA",Stingray Karaoke
-https://lotus.stingray.com/manifest/karaoke-kar000-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/882kd90.png" group-title="MUSICA",Stingray Naturescape
-https://lotus.stingray.com/manifest/naturescape-a003-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/Tq3I0po.png" group-title="MUSICA",Stingray Nothin' But 90s
-https://lotus.stingray.com/manifest/ose-142ads-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/H2ugC9L.png" group-title="MUSICA",Stingray Pop Adult
-https://lotus.stingray.com/manifest/ose-104ads-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/6E3wYrb.png" group-title="MUSICA",Stingray Remember the 80s
-https://lotus.stingray.com/manifest/ose-128ads-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/mt8ulVX.png" group-title="MUSICA",Stingray Rock Alternative
-https://lotus.stingray.com/manifest/ose-102ads-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Stingray_Music_logo.svg/512px-Stingray_Music_logo.svg.png" group-title="MUSICA",Stingray Romance Latino
-https://lotus.stingray.com/manifest/ose-202ads-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/h1DsOzH.png" group-title="MUSICA",Stingray Smooth Jazz
-https://lotus.stingray.com/manifest/ose-140ads-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/dU1KC3f.png" group-title="MUSICA",Stingray Soul Storm
-https://lotus.stingray.com/manifest/ose-134ads-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/ywAN923.png" group-title="MUSICA",Stingray The Spa
-https://lotus.stingray.com/manifest/ose-122ads-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/mMbntB5.png" group-title="MUSICA",Stingray Today's KPOP
-https://lotus.stingray.com/manifest/ose-317ads-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/Os3kRRP.png" group-title="MUSICA",Stingray Today's Latin Pop
-https://lotus.stingray.com/manifest/ose-190ads-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/Os3kRRP.png" group-title="MUSICA",Stingray Urban Beat
-https://lotus.stingray.com/manifest/ose-133ads-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/521_Recuerdos_Retro_Radio_TV.png" group-title="MUSICA",Recuerdos Retro Radio TV
-https://panel.tvstream.cl:1936/8034/8034/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/5_Retro_Plus_TV_Senal_2.png" group-title="MUSICA",Retro Plus TV Señal 2
-https://tls-cl.cdnz.cl/retroplustvdos/live/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/13_Ruidos_TV.png" group-title="MUSICA",Ruidos TV
-https://stream.skarnetchile.com:19360/ruidostv/ruidostv.m3u8
-#EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/1075_Cadena_Elite.png" group-title="MUSICA",Cadena Elite
-https://cloudvideo.servers10.com:8081/8004/index.m3u8
-#EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/1062_Canal_VM_Latino.png" group-title="MUSICA",Canal VM Latino
-https://59ef525c24caa.streamlock.net/vmtv/vmlatino/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/1127_Carolina_TV_2.png" group-title="MUSICA",Carolina TV 2
-https://jireh-1-hls-video-cl-isp.dps.live/hls-video/ey6283je82983je9823je8jowowiekldk9838274/carolinatv2/carolinatv2.smil/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/16_Conecta_TV.png" group-title="MUSICA",Conecta TV
-https://stream8.mexiserver.com:19360/conectatvx/conectatvx.m3u8
-#EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/796_Euro_Indie_Music.png" group-title="MUSICA",Euro Indie Music | GB
-http://178.33.224.197:1935/euroindiemusic/euroindiemusic/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/1277_Flash___Freetv_com.png" group-title="MUSICA",Flash - Freetv.com
-https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01024-olympusat-flash-ono/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/1195_La_Chilena_TV.png" group-title="MUSICA",La Chilena TV
-https://vdochile.com:3134/hybrid/play.m3u8
-#EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/1426_Los_Heat_TV.png" group-title="MUSICA",Los Heat TV
-https://mdstrm.com/video/631f6f0fe4eba7082bc551ad.m3u8
+
+
+
+
+#EXTINF:-1 tvg-name="HBO" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfoiQ_vs3tYz-7-yPug63X4XMDp8ctsZKB6fE2MPGyJlSACBvmBG3Epm8&s=10",HBO
+http://199.127.63.105:9090/278488_.m3u8
+
+
+
+
+#EXTINF:-1 tvg-name="HBO2" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK8Xom4jPZpz-LX0yPLxUcuc90K3R7P1zC4w&usqp=CAU",HBO 2
+http://104.194.8.54:9090/278492_.m3u8
+
+
+
+
+
+
+#EXTINF:-1 tvg-name="HBO PLUS" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb2sCmgBQ3pme8ph_nZoeYBh-h_fVFI_cYprhz32im6PLPqTzSuc--CDI&s=10",HBO PLUS
+http://199.127.63.105:9090/278489_.m3u8
+
+
+
+
+#EXTINF:-1 tvg-name="HBO POP" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8jzXNLZ4grE_rvhRInXknuajJIu9CsSjoj1f1p6lwisk13uSNB0qlLt8&s=10",HBO POP
+http://199.127.63.105:9090/278502_.m3u8
+
+
+
+
+#EXTINF:-1 tvg-name="HBO XTREME" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ7vptsnJlOboqsUwMmOvG30Pk8YieNCLAxIOEo4sV422omC2qAxl_dcQ&s=10",HBO XTREME
+http://199.127.63.105:9090/278507_.m3u8
+
+
+
+
+
+
+#EXTINF:-1 tvg-logo="https://sm.ign.com/t/ign_es/feature/t/the-newest/the-newest-horror-movies-to-watch-this-halloween-and-beyond_mbxv.1280.jpg",CINEMA ACCION
+http://tv.diablotv.net:8080/CanalesIprotvPro/U3XdSbjMVb/95609
+
+
+
+
+#EXTINF:-1 tvg-name="USA" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi2LjyPtwZW8DIl8WKNNT7kfipK38vg-zXI-8BWp15VmWj_buhXNcOuRM&s=10",USA
+http://104.238.205.28:9090/278451_.m3u8
+
+
+#EXTINF:-1 tvg-name="INIVERSAL PREMIERE" tvg-logo="https://universalplus.com/files/channels/398064723.png",UNIVERSAL PREMIERE
+http://199.127.63.105:9090/278476_.m3u8
+
+
+
+
+#EXTINF:-1 tvg-name="TELEMUNDO ACCION" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7HWHve49nrZcVjmg_Y-OI-Nx_oL46L-76qL91INvMjBDlA5nvuyG41oMk&s=10",TELEMUNDO ACCION
+https://xumo-drct-ch835-ekq0p.fast.nbcuni.com/live/master.m3u8
+
+
+#EXTINF:-1 tvg-name="STARZ" tvg-logo="https://static0.srcdn.com/wordpress/wp-content/uploads/2025/05/starz-edge-1200-x-674-network-logo.png?q=70&fit=crop&w=1200&h=628&dpr=1",STARZ
+http://tv.diablotv.net:8080/CanalesIprotvPro/U3XdSbjMVb/86009
+
+
+#EXTINF:-1 tvg-name="STAR CHANEL" tvg-logo="https://i.postimg.cc/Y0KsKMk5/st-ch.png",STAR CHANEL
+http://tv.diablotv.net:8080/CanalesIprotvPro/U3XdSbjMVb/9723
+
+
+#EXTINF:-1 tvg-name="GOLDEN" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsFLa_-8vVCurp6brHD0NjI6wLPHp3xqY6FDyoikOFAuxewhSuacxHnuA&s=10",GOLDEN
+http://104.194.8.54:9090/278479_.m3u8
+
+
+
+
+#EXTINF:-1  tvg-logo="https://cdn.storage.foromedios.com/monthly_2022_03/large.1414587199_UniversalCinema-Claro.png.34bdc6633205429349f7a9bb8c9f0a51.png",UNIVERSAL CINEMA
+http://tv.diablotv.net:8080/CanalesIprotvPro/U3XdSbjMVb/9757
+
+
+
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/b9/Sony_Channel_Logo.png",Sony Channel
+http://104.238.222.251:9090/278405_.m3u8
+
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-t0a__WKc4de4bgrb3_sQYSpi02LB4i0__ZjUkFzPpiycKtmZfALYBdM&s=10",Sony Movies
+http://104.194.8.54:9090/278471_.m3u8
+
+
+#EXTINF:-1 tvg-id="I613.90852.schedulesdirect.org" tvg-name="amc" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/AMC_logo_2016.png/640px-AMC_logo_2016.png",AMC
+http://104.238.222.251:9090/278394_.m3u8
+
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/50/MC_logo_2022.png", MC
+http://104.238.205.28:9090/278509_.m3u8
+
+
+
+
+
+
+#EXTINF:-1 tvg-id="CinemaxSouth.us" tvg-name="cinemax" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP5LVxGGnW0PWLMDnsxEfQm1NUTfQ52WOSR_Svchb7oHnXoCPaAIcL6Tk&s=10",Cinemax
+http://51.79.81.69:8080/live/tVoIdcGo63/3k9huT771I/99.ts
+
+
+
+
+#EXTINF:-1 tvg-name="CINECANAL" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr4-mVY2sfIXF2grqXAImmFgvU7a0ezriLqg&usqp=CAU",CINECANAL
+http://104.238.205.28:9090/278462_.m3u8
+
+
+
+
+#EXTINF:-1 tvg-id="I217.49336.schedulesdirect.org" tvg-name="fx" tvg-logo="https://vignette.wikia.nocookie.net/iceagefanon/images/d/d7/Fx-logo.png/revision/latest?cb=20151205215619",FX
+http://104.238.205.28:9090/278426_.m3u8
+
+
+#EXTINF:-1 tvg-id="I1518.103379.schedulesdirect.org" tvg-name="space" tvg-logo="https://3.bp.blogspot.com/-ifCagZ77nfw/W6ls2LsJInI/AAAAAAAAAN0/_I_JmomLjTQi9WTGmoACu3q4mRNmJW03wCPcBGAYYCw/s1600/space.png",Space
+http://199.127.63.105:9090/278515_.m3u8
+
+
+#EXTINF:-1 tvg-id="I605.111860.schedulesdirect.org" tvg-name="warner channel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5e/Warner2018LA.png",Warner Channel
+http://104.238.205.28:9090/278453_.m3u8
+
+
+
+
+
+
+#EXTINF:-1 tvg-id="I435.80807.schedulesdirect.org" tvg-name="tn*t" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/TNT_TV_logo.svg/1200px-TNT_TV_logo.svg.png", TNT
+http://199.127.63.105:9090/278519_.m3u8
+
+
+
+
+#EXTINF:-1 tvg-name="PARAMOUNT CHANEL" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5plMZAtfU8RuEWOB6jWAvsiU1vY2Kullh_WOdYyF6e0A6yZr88vmqOp4&s=10", PARAMOUNT CHANEL
+http://tv.diablotv.net:8080/CanalesIprotvPro/U3XdSbjMVb/9705
+
+
+#EXTINF:-1 tvg-id="I603.90605.schedulesdirect.org" tvg-name="studio universal" tvg-logo="http://3.bp.blogspot.com/-KDeHIqXKzfQ/ThNLgA6wOlI/AAAAAAAAPyE/W9XoHa0HkuU/s1600/studiouniversal.png",Studio Universal
+http://104.194.8.54:9090/278518_.m3u8
+
+
+#EXTINF:-1 tvg-id="SonyCanalNovelas.us" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMSj9EfePi33ZdBjQReCH0s0gO7FyHeMhTo5shp1hbSxbVaZM4rWUWO2U&s=10" ,Sony Canal Novelas
+https://a89829b8dca2471ab52ea9a57bc28a35.mediatailor.us-east-1.amazonaws.com/v1/master/0fb304b2320b25f067414d481a779b77db81760d/CanelaTV_SonyCanalNovelas/playlist.m3u8
+
+
+
+
+
+
+#EXTINF:-1 tvg-id="I642.84425.schedulesdirect.org" tvg-name="universal channel" tvg-logo="http://1.bp.blogspot.com/-vZ7-rkLTaQA/TgeZExzxYcI/AAAAAAAABpM/ZtVIi2OJm2o/s1600/Universal+Channel+logo+2010.png",Universal Channel
+http://199.127.63.105:9090/278450_.m3u8
+
+
+
+
+#EXTINF:-1 tvg-name="AZTECA 7" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2a-TfkSOtv2NTZY7vUjeoi4BqIkjqpS4cftZSnhBs90Zs06wXXr9zCdDx&s=10",Azteca 7
+https://dai.google.com/linear/hls/event/YHoOj51dSKCvBQOBG2OvLQ/master.m3u8
+
+
+
+
+#EXTINF:-1 tvg-id="Canal5.mx" tvg-name="canal 5" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2KO0tJWPlY2s3LRkuLdaQaK8_NGJ89cqcDg&usqp=CAU",Canal 5
+http://172.93.102.119:9090/162980_.m3u8
+
+
+
+
+#EXTINF:-1 tvg-name="LAS ESTRELLAS" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/6d/Canal_de_las_Estrellas_2013.png/revision/latest?cb=20200305231311&path-prefix=es",LAS ESTRELLAS
+https://channel01-onlymex.akamaized.net/hls/live/2022749/event01/index.m3u8
+
+
+
+
+#EXTINF:-1 tvg-id="I489.16288.schedulesdirect.org" tvg-name="de película" tvg-logo="https://cdn.mitvstatic.com/channels/cl_de-pelicula_m.png",De Película
+http://104.238.205.28:9090/278456_.m3u8
+
+
+#EXTINF:-1 tvg-id="I489.16288.schedulesdirect.org" tvg-name="Cine Latino" tvg-logo="https://yt3.googleusercontent.com/NKN8usqtQbTO_GNLIgyHfU1MYfBnxkirUKXkpJER1ALWrp8HoeSKJt1MwdU-pshOCwvTsAwYAA=s900-c-k-c0x00ffffff-no-rj",Cine Latino
+http://104.238.205.28:9090/278460_.m3u8
+
+
+#EXTINF:-1 tvg-id="MultimediosMonterrey.mx" tvg-logo="https://i.imgur.com/4IGzNdq.png" ,Multimedios Monterrey 
+https://mdstrm.com/live-stream-playlist/57b4dbf5dbbfc8f16bb63ce1.m3u8
+
+
+#EXTINF:-1 tvg-id="Bandamax" tvg-name="teleritmo" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbNImQ5TzBir21Mud-9xsN8_mtPGwxXErOpB-7bRi9nng-X8dsge2CDso&s=10",Bandamax
+http://104.238.205.28:9090/278603_.m3u8
+
+
+
+#EXTINF:-1 tvg-id="Teleritmo.mx" tvg-name="teleritmo" tvg-logo="https://imgn.cdn.iutpcdn.com/IMGS/CHANNEL/SUPER_LIGHT/940722-8c.png",Teleritmo
+http://mdstrm.com/live-stream-playlist/57b4dc126338448314449d0c.m3u8
+
+

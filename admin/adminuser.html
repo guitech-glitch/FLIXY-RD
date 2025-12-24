@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Administrativo FLIXY-RD</title>
+    <style>
+        :root { --primary: #2563eb; --bg: #0d1117; --card: #1e293b; --text: #f8fafc; --accent: #3b82f6; --danger: #ef4444; --success: #22c55e; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--bg); color: var(--text); padding: 10px; margin: 0; }
+        .container { width: 98%; max-width: 1000px; margin: auto; padding-top: 10px; }
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; border-bottom: 1px solid #334155; padding-bottom: 10px; flex-wrap: wrap; gap: 10px; }
+        
+        .actions-bar { margin-bottom: 15px; display: flex; justify-content: flex-start; }
+        .btn-add-main { background: var(--success); color: white; padding: 10px 20px; font-size: 0.9rem; display: flex; align-items: center; gap: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.2); border:none; cursor:pointer; border-radius:4px; }
+        .btn-add-main:hover { background: #16a34a; transform: translateY(-1px); }
+
+        .table-container { width: 100%; overflow-x: auto; background: var(--card); border-radius: 8px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3); }
+        table { width: 100%; border-collapse: collapse; min-width: 600px; }
+        th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #334155; font-size: 0.8rem; }
+        th { background: #334155; color: #94a3b8; text-transform: uppercase; font-size: 0.65rem; }
+        
+        .date-cell { font-family: 'Courier New', monospace; font-weight: bold; color: #cbd5e1; }
+        .expire-count { font-weight: bold; padding: 2px 6px; border-radius: 4px; font-size: 0.7rem; }
+        .days-ok { background: rgba(34, 197, 94, 0.2); color: var(--success); }
+        .days-warn { background: rgba(239, 68, 68, 0.2); color: var(--danger); }
+        .status-badge { padding: 3px 8px; border-radius: 4px; font-size: 0.65rem; font-weight: bold; text-transform: uppercase; }
+        .active { background: var(--success); color: white; }
+        .suspended { background: var(--danger); color: white; }
+        
+        .btn { border: none; border-radius: 4px; cursor: pointer; font-weight: bold; transition: 0.2s; }
+        .btn-edit { background: var(--accent); color: white; padding: 6px 12px; font-size: 0.75rem; }
+        .btn-save { background: #166534; color: white; width: 100%; margin-top: 15px; padding: 12px; }
+        .btn-delete { background: var(--danger); color: white; width: 100%; margin-top: 8px; padding: 10px; }
+        .btn-cancel { background: transparent; color: #94a3b8; width: 100%; margin-top: 5px; font-size: 0.8rem; }
+
+        .modal { display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #1e293b; padding: 20px; border-radius: 12px; border: 1px solid #3b82f6; z-index: 100; width: 90%; max-width: 380px; max-height: 90vh; overflow-y: auto; box-shadow: 0 0 50px rgba(0,0,0,0.8); }
+        .form-group { margin-bottom: 10px; }
+        label { font-size: 0.6rem; color: #3b82f6; font-weight: bold; text-transform: uppercase; display: block; margin-bottom: 3px; }
+        input, select { width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #475569; background: #0f172a; color: white; box-sizing: border-box; font-size: 0.9rem; }
+        .overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 50; }
+        .loading { text-align: center; padding: 30px; color: #3b82f6; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Admin FLIXY-RD</h1>
+        <div id="info" style="font-size: 0.7rem; color: #64748b;">guitech-glitch / FLIXY-RD</div>
+    </div>
+
+    <div class="actions-bar">
+        <button class="btn-add-main" onclick="openAddModal()">+ AGREGAR NUEVO USUARIO</button>
+    </div>
+    
+    <div id="loader" class="loading">Sincronizando con GitHub...</div>
+
+    <div class="table-container">
+        <table id="userTable" style="display:none;">
+            <thead>
+                <tr>
+                    <th>Usuario</th>
+                    <th>Registro</th>
+                    <th>Expira</th>
+                    <th>Plan</th>
+                    <th>Estado</th>
+                    <th style="text-align: center;">Acción</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+</div>
+
+<div id="overlay" class="overlay" onclick="closeAllModals()"></div>
+
+<div id="userModal" class="modal">
+    <h2 id="modalTitle" style="margin-top:0; color:white; font-size: 1.1rem; border-bottom: 1px solid #334155; padding-bottom: 8px;">Usuario</h2>
+    <input type="hidden" id="editIndex">
+    
+    <div class="form-group"><label>Usuario (Editable)</label><input type="text" id="mUser"></div>
+    <div class="form-group"><label>Contraseña</label><input type="text" id="mPass"></div>
+    <div class="form-group"><label>Correo</label><input type="email" id="mCorreo"></div>
+    <div class="form-group"><label>Contacto</label><input type="text" id="mContacto"></div>
+    <div class="form-group"><label>Registro</label><input type="date" id="mReg"></div>
+    <div class="form-group"><label>Expiración</label><input type="date" id="mExp"></div>
+    
+    <div class="form-group">
+        <label>Plan</label>
+        <select id="mPlan" onchange="handlePlanChange()">
+            <option value="">-- SIN PLAN --</option>
+            <option value="1 DIAS">1 DIAS</option>
+            <option value="7 DIAS">7 DIAS</option>
+            <option value="15 DIAS">15 DIAS</option>
+            <option value="30 DIAS">30 DIAS</option>
+            <option value="60 DIAS">60 DIAS</option>
+            <option value="3 MECES">3 MECES</option>
+            <option value="12 MECES">12 MECES</option>
+        </select>
+    </div>
+    
+    <div class="form-group">
+        <label>Estado</label>
+        <select id="mStatus">
+            <option value="ACTIVO">ACTIVO</option>
+            <option value="SUSPENDIDO">SUSPENDIDO</option>
+        </select>
+    </div>
+
+    <button id="btnSave" class="btn btn-save" onclick="processUser()">GUARDAR CAMBIOS</button>
+    <button id="btnDelete" class="btn btn-delete" onclick="deleteUser()" style="display:none;">ELIMINAR USUARIO</button>
+    <button class="btn btn-cancel" onclick="closeAllModals()">CANCELAR</button>
+</div>
+
+<script>
+    // NOTA: Asegúrate de que tu token sea válido
+    const CONFIG = {
+        token: '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',
+        owner: 'guitech-glitch',
+        repo: 'FLIXY-RD',
+        path: 'user/usuarios.m3u'
+    };
+
+    let usersData = [];
+    let fileSha = "";
+
+    function formatDateDisplay(dateStr) {
+        if (!dateStr) return '-- / -- / --';
+        const parts = dateStr.split('-');
+        const meses = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+        return `${parts[2]} / ${meses[parseInt(parts[1]) - 1]} / ${parts[0].substring(2)}`;
+    }
+
+    function calculateDaysLeft(dateStr) {
+        if (!dateStr) return 0;
+        const today = new Date(); today.setHours(0,0,0,0);
+        const expDate = new Date(dateStr + "T00:00:00");
+        return Math.ceil((expDate - today) / (1000 * 60 * 60 * 24));
+    }
+
+    function handlePlanChange() {
+        const plan = document.getElementById('mPlan').value;
+        const expInput = document.getElementById('mExp');
+        const statusSelect = document.getElementById('mStatus');
+
+        // Si se elige "-- SIN PLAN --" (valor vacío)
+        if (!plan) {
+            expInput.value = ""; // Limpia la fecha de expiración
+            statusSelect.value = "SUSPENDIDO"; // Cambia el estado a SUSPENDIDO
+            return;
+        }
+
+        // Lógica para planes activos
+        const daysToAdd = parseInt(plan.split(' ')[0]);
+        const multiply = plan.includes("MECES") ? 30 : 1;
+        const totalDays = daysToAdd * multiply;
+        
+        const newDate = new Date();
+        newDate.setDate(newDate.getDate() + totalDays);
+        expInput.value = newDate.toISOString().split('T')[0];
+        
+        // Si se selecciona cualquier plan válido, el estado pasa a ACTIVO
+        statusSelect.value = "ACTIVO";
+    }
+
+    async function loadData() {
+        try {
+            const res = await fetch(`https://api.github.com/repos/${CONFIG.owner}/${CONFIG.repo}/contents/${CONFIG.path}`, {
+                headers: { 'Authorization': `token ${CONFIG.token}` }
+            });
+            const data = await res.json();
+            fileSha = data.sha;
+            const rawText = decodeURIComponent(escape(atob(data.content)));
+            parseData(rawText);
+        } catch (err) { console.error("Error cargando datos:", err); }
+    }
+
+    function parseData(text) {
+        usersData = [];
+        const blocks = text.split('#EXTM3U').filter(b => b.trim() !== "");
+        blocks.forEach((block) => {
+            const getV = (key) => {
+                const m = block.match(new RegExp(`${key}=(.*)`, 'i'));
+                return m ? m[1].trim() : '';
+            };
+            let exp = getV('EXPIRACION');
+            let status = getV('STATUS');
+            if (exp && calculateDaysLeft(exp) <= 0) status = "SUSPENDIDO";
+
+            usersData.push({
+                user: getV('USUARIO'), pass: getV('PASS'), correo: getV('CORREO'),
+                contacto: getV('CONTACTO'), reg: getV('REGISTRO'), exp: exp,
+                status: status, plan: getV('PLAN')
+            });
+        });
+        renderTable();
+    }
+
+    function renderTable() {
+        const tbody = document.getElementById('tableBody');
+        tbody.innerHTML = "";
+        usersData.forEach((u, i) => {
+            const days = calculateDaysLeft(u.exp);
+            const statusClass = u.status === 'ACTIVO' ? 'active' : 'suspended';
+            tbody.innerHTML += `<tr>
+                <td><strong>${u.user}</strong></td>
+                <td class="date-cell">${formatDateDisplay(u.reg)}</td>
+                <td><span class="expire-count ${days <= 0 ? 'days-warn' : 'days-ok'}">${days} d</span></td>
+                <td>${u.plan || '--'}</td>
+                <td><span class="status-badge ${statusClass}">${u.status}</span></td>
+                <td style="text-align: center;"><button class="btn btn-edit" onclick="openEditModal(${i})">Editar</button></td>
+            </tr>`;
+        });
+        document.getElementById('loader').style.display = 'none';
+        document.getElementById('userTable').style.display = 'table';
+    }
+
+    function openAddModal() {
+        document.getElementById('modalTitle').innerText = "Nuevo Usuario";
+        document.getElementById('editIndex').value = "-1";
+        clearForm();
+        document.getElementById('mUser').readOnly = false; // Permitir escribir
+        document.getElementById('mUser').style.opacity = "1";
+        document.getElementById('mReg').value = new Date().toISOString().split('T')[0];
+        document.getElementById('btnDelete').style.display = "none";
+        showModal();
+    }
+
+    function openEditModal(i) {
+        const u = usersData[i];
+        document.getElementById('modalTitle').innerText = "Editar Usuario";
+        document.getElementById('editIndex').value = i;
+        
+        // Carga de datos
+        document.getElementById('mUser').value = u.user;
+        document.getElementById('mUser').readOnly = false; // AHORA ES EDITABLE
+        document.getElementById('mUser').style.opacity = "1";
+        
+        document.getElementById('mPass').value = u.pass;
+        document.getElementById('mCorreo').value = u.correo;
+        document.getElementById('mContacto').value = u.contacto;
+        document.getElementById('mReg').value = u.reg;
+        document.getElementById('mExp').value = u.exp;
+        document.getElementById('mPlan').value = u.plan;
+        document.getElementById('mStatus').value = u.status;
+        document.getElementById('btnDelete').style.display = "block";
+        showModal();
+    }
+
+    function clearForm() {
+        ['mUser','mPass','mCorreo','mContacto','mExp','mPlan'].forEach(id => document.getElementById(id).value = "");
+        document.getElementById('mStatus').value = "ACTIVO";
+    }
+
+    function showModal() { document.getElementById('userModal').style.display = "block"; document.getElementById('overlay').style.display = "block"; }
+    function closeAllModals() { document.getElementById('userModal').style.display = "none"; document.getElementById('overlay').style.display = "none"; }
+
+    async function processUser() {
+        const i = document.getElementById('editIndex').value;
+        const btn = document.getElementById('btnSave');
+        
+        const userData = {
+            user: document.getElementById('mUser').value.trim(),
+            pass: document.getElementById('mPass').value.trim(),
+            correo: document.getElementById('mCorreo').value.trim(),
+            contacto: document.getElementById('mContacto').value.trim(),
+            reg: document.getElementById('mReg').value,
+            exp: document.getElementById('mExp').value,
+            plan: document.getElementById('mPlan').value,
+            status: document.getElementById('mStatus').value
+        };
+
+        if (!userData.user) { alert("El nombre de usuario es obligatorio"); return; }
+
+        btn.innerText = "Sincronizando..."; btn.disabled = true;
+
+        if (i === "-1") {
+            usersData.push(userData);
+        } else {
+            usersData[i] = userData; // Actualiza el objeto en la posición i (incluyendo el nuevo nombre)
+        }
+
+        await sync();
+    }
+
+    async function deleteUser() {
+        if (!confirm("¿Eliminar este usuario definitivamente?")) return;
+        const i = document.getElementById('editIndex').value;
+        usersData.splice(i, 1);
+        await sync();
+    }
+
+    async function sync() {
+        let content = "";
+        usersData.forEach(u => {
+            content += `#EXTM3U\n#INFO: USUARIO=${u.user}\n#INFO: PASS=${u.pass}\n#INFO: CORREO=${u.correo}\n#INFO: CONTACTO=${u.contacto}\n#INFO: REGISTRO=${u.reg}\n#INFO: EXPIRACION=${u.exp}\n#INFO: STATUS=${u.status}\n#INFO: PLAN=${u.plan}\n\n`;
+        });
+        
+        const encoded = btoa(unescape(encodeURIComponent(content)));
+        try {
+            const res = await fetch(`https://api.github.com/repos/${CONFIG.owner}/${CONFIG.repo}/contents/${CONFIG.path}`, {
+                method: 'PUT',
+                headers: { 'Authorization': `token ${CONFIG.token}`, 'Content-Type': 'application/json' },
+                body: JSON.stringify({ message: "Update DB via Panel", content: encoded, sha: fileSha })
+            });
+            if (res.ok) { 
+                closeAllModals(); 
+                await loadData(); 
+            } else {
+                alert("Error al sincronizar con GitHub. Verifica el Token.");
+            }
+        } catch (e) { alert("Error de conexión"); }
+        finally { 
+            document.getElementById('btnSave').innerText = "GUARDAR CAMBIOS"; 
+            document.getElementById('btnSave').disabled = false; 
+        }
+    }
+
+    loadData();
+</script>
+</body>
+</html>
