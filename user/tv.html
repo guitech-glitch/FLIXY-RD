@@ -174,7 +174,7 @@
 
     <script src="https://vjs.zencdn.net/8.3.0/video.min.js"></script>
     <script>
-        const M3U_URL = 'https://wefetchproxy.jhonielproyectos.workers.dev/?url=https://flixy-rd.pages.dev/admin/channel.m3u';
+        const M3U_URL = 'https://flixy-rd.pages.dev/admin/channel.m3u';
         const player = videojs('tv-player', {
     fluid: true,
     html5: {
@@ -190,7 +190,7 @@
 
         async function init() {
             try {
-                let response = await fetch(M3U_URL).catch(() => fetch('https://corsproxy.io/?' + encodeURIComponent(M3U_URL)));
+                let response = await fetch(M3U_URL).catch(() => fetch('https://wefetchproxy.jhonielproyectos.workers.dev/?url=' + encodeURIComponent(M3U_URL)));
                 const text = await response.text();
                 parse(text);
                 document.getElementById('status').style.display = 'none';
