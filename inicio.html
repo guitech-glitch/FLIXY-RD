@@ -3,116 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FLIXY RD - Inicio</title>
+    <title>FLIXY RD - Player</title>
     <style>
         :root {
-            --azul: #0070f3;
-            --fondo: #0a0a0a;
-            --gris: #1a1a1a;
+            --azul-brillante: #0070f3;
+            --fondo: #050505;
+            --gris-navbar: rgba(18, 18, 18, 0.95);
+            --rojo-error: #ff4d4d;
         }
 
-        body {
+        /* Configuración para que el cuerpo no tenga scroll propio */
+        html, body {
             margin: 0;
-            font-family: sans-serif;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden; 
+            font-family: 'Inter', sans-serif;
             background-color: var(--fondo);
-            color: white;
+            display: flex;
+            flex-direction: column;
         }
 
-        /* Menú Superior */
+        /* Navbar Moderno */
         .navbar {
-            background: var(--gris);
-            padding: 15px 25px;
+            background: var(--gris-navbar);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 0 25px;
+            height: 65px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 2px solid var(--azul);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            flex-shrink: 0; /* Evita que el menú se encoja */
+            z-index: 100;
         }
 
-        .logo-nav {
-            font-weight: 900;
-            font-size: 20px;
+        .logo-img {
+            height: 35px;
+            width: auto;
         }
 
-        .user-info {
+        .right-section {
             display: flex;
-            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .user-box {
             text-align: right;
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+            padding-right: 15px;
         }
 
         .user-name {
-            color: var(--azul);
-            font-weight: bold;
-            font-size: 14px;
+            display: block;
+            color: white;
+            font-weight: 600;
+            font-size: 13px;
         }
 
-        .days-left {
-            font-size: 11px;
-            color: #aaa;
+        .days-badge {
+            font-size: 9px;
+            color: var(--azul-brillante);
+            background: rgba(0, 112, 243, 0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: bold;
         }
 
         .logout-btn {
-            background: #ff4d4d;
-            border: none;
-            color: white;
-            padding: 5px 10px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-left: 15px;
+            background: transparent;
+            border: 1px solid var(--rojo-error);
+            color: var(--rojo-error);
+            padding: 6px 12px;
+            border-radius: 6px;
             font-size: 12px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .logout-btn:hover {
+            background: var(--rojo-error);
+            color: white;
+        }
+
+        /* Contenedor del Iframe (Contenido Principal) */
+        .content-container {
+            flex-grow: 1; /* Toma todo el espacio sobrante */
+            width: 100%;
+            border: none;
+            position: relative;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
         }
     </style>
 </head>
 <body>
 
     <nav class="navbar">
-        <div class="logo-nav">FLIXY<span style="color: #ff4d4d;">RD</span></div>
+        <div class="logo-container">
+            <img src="https://flixy-rd.pages.dev/img/img.jpg" alt="Logo" class="logo-img">
+        </div>
         
-        <div style="display: flex; align-items: center;">
-            <div class="user-info">
-                <span class="user-name" id="display-user">Cargando...</span>
-                <span class="days-left" id="display-days">Calculando días...</span>
+        <div class="right-section">
+            <div class="user-box">
+                <span class="user-name" id="display-user">Usuario</span>
+                <span class="days-badge" id="display-days">...</span>
             </div>
             <button class="logout-btn" onclick="logout()">Salir</button>
         </div>
     </nav>
 
-    <div style="padding: 20px; text-align: center;">
-        <h1>Bienvenido a la Plataforma</h1>
-        <p>Tu contenido premium está listo.</p>
+    <div class="content-container">
+        <iframe src="user/tv.html" title="TV Content" allowfullscreen></iframe>
     </div>
 
     <script>
-        // Función para cerrar sesión
         function logout() {
             localStorage.clear();
-            window.location.href = 'index.html'; // Cambia esto al nombre de tu login
+            window.location.href = 'index.html';
         }
 
-        // Cargar datos del usuario
         window.onload = function() {
             const user = localStorage.getItem('usuarioFlixy');
             const expira = localStorage.getItem('expiraFlixy');
 
             if (!user) {
-                window.location.href = 'index.html'; // Protege la página si no hay login
+                window.location.href = 'index.html';
                 return;
             }
 
             document.getElementById('display-user').innerText = user.toUpperCase();
 
-            // Calcular días restantes
             const fechaExp = new Date(expira);
             const hoy = new Date();
-            
-            // Diferencia en milisegundos y conversión a días
             const diferenciaMs = fechaExp - hoy;
             const diasRestantes = Math.ceil(diferenciaMs / (1000 * 60 * 60 * 24));
 
             const displayDays = document.getElementById('display-days');
             if (diasRestantes > 0) {
-                displayDays.innerText = `Expira en: ${diasRestantes} días`;
+                displayDays.innerText = `${diasRestantes} DÍAS`;
             } else {
-                displayDays.innerText = `Cuenta vencida`;
+                displayDays.innerText = `VENCIDO`;
                 displayDays.style.color = '#ff4d4d';
             }
         };
