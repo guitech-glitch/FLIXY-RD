@@ -1,8 +1,6 @@
 #EXTM3U
 #EXTINF:-1 tvg-logo="https://bestleague.world/img/espn3.webp" group-title="DEPORTES",ESPN 3 MX
 https://8c51.crackstreamslivehd.com/espn3mx/tracks-v1a1/mono.m3u8?ip=190.242.58.150&token=5ce68315df7dc93713c832c8294f851acb87c0be-ee-1766591597-1766537597
-#EXTINF:-1 tvg-logo="https://imgur.com/ieOn20X.png" group-title="TV PREMIUM",ANI Retro
-https://tv.streaming-chile.com:19360/8068/8068.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/IHVHNE4.png" group-title="TV PREMIUM",DreikoTV
 https://rtv.fullhd-streaming.com:19360/dreikotv/dreikotv.m3u8
 #EXTINF:-1 tvg-logo="" group-title="TV PREMIUM",UNIVERSAL CRIME
