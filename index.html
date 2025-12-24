@@ -148,101 +148,13 @@
     </footer>
 
     <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-
-        function cerrarModal() {
-            document.getElementById('modalAlert').style.display = 'none';
-        }
-
-        function mostrarModal(titulo, mensaje) {
-            document.getElementById('modalTitle').innerText = titulo;
-            document.getElementById('modalText').innerHTML = mensaje;
-            document.getElementById('modalAlert').style.display = 'flex';
-        }
-
-        document.getElementById('loginForm').addEventListener('submit', async (e) => {
-            e.preventDefault();
-            const u = document.getElementById('user').value.trim();
-            const p = document.getElementById('pass').value.trim();
-            const s = document.getElementById('status');
-            const b = document.getElementById('btn');
-
-            b.disabled = true;
-            s.className = 'load';
-            s.innerText = 'Validando cuenta...';
-
-            try {
-                const res = await fetch('https://flixy-rd.pages.dev/user/usuarios.m3u?t=' + Date.now());
-                const text = await res.text();
-
-                const bloques = text.split('#EXTM3U').filter(bl => bl.trim() !== "");
-                let cuentaEncontrada = null;
-
-                for (let bloque of bloques) {
-                    if (bloque.includes(`USUARIO=${u}`) && bloque.includes(`PASS=${p}`)) {
-                        cuentaEncontrada = bloque;
-                        break;
-                    }
-                }
-
-                if (cuentaEncontrada) {
-                    const lineas = cuentaEncontrada.split('\n');
-                    let statusUser = "";
-                    let expiraUser = "";
-
-                    lineas.forEach(l => {
-                        if (l.includes('STATUS=')) statusUser = l.split('=')[1].trim().toUpperCase();
-                        if (l.includes('EXPIRACION=')) expiraUser = l.split('=')[1].trim();
-                    });
-
-                    // Lógica de fechas
-                    const fechaExp = new Date(expiraUser);
-                    const hoy = new Date();
-                    const estaVencido = hoy > fechaExp;
-
-                    // VALIDACIONES SOLICITADAS:
-                    
-                    // 1. Si está SUSPENDIDO (independientemente de la fecha)
-                    if (statusUser === 'SUSPENDIDO') {
-                        s.innerText = '';
-                        mostrarModal('USUARIO SUSPENDIDO', 'Tu cuenta se encuentra suspendida temporalmente.<br><br>Contacte a soporte para más información.');
-                        b.disabled = false;
-                        return;
-                    }
-
-                    // 2. Si está ACTIVO pero la fecha ya pasó (CADUCADO)
-                    if (statusUser === 'ACTIVO' && estaVencido) {
-                        s.innerText = '';
-                        mostrarModal('ACCESO CADUCADO', 'Tu membresía ha vencido.<br><br>Por favor, contacte a soporte para renovar su acceso.');
-                        b.disabled = false;
-                        return;
-                    }
-
-                    // 3. Si está ACTIVO y NO ha vencido (REDIRECCIÓN)
-                    if (statusUser === 'ACTIVO' && !estaVencido) {
-                        localStorage.setItem('usuarioFlixy', u);
-                        localStorage.setItem('expiraFlixy', expiraUser);
-                        s.className = 'ok';
-                        s.innerText = 'Acceso correcto. Iniciando...';
-                        setTimeout(() => window.location.href = 'inicio.html', 1500);
-                    } else {
-                        // Caso por si el status es "INACTIVO" u otro no definido
-                        s.innerText = '';
-                        mostrarModal('CUENTA NO ACTIVA', 'El estado de tu cuenta es: ' + statusUser + '.<br>Contacte a soporte.');
-                        b.disabled = false;
-                    }
-
-                } else {
-                    s.className = 'err';
-                    s.innerText = 'Usuario o contraseña incorrectos.';
-                    b.disabled = false;
-                }
-            } catch (err) {
-                s.className = 'err';
-                s.innerText = 'Error de conexión.';
-                b.disabled = false;
-            }
-        });
-    </script>
+(function(){
+  const z = ["UEhOamNtbHdkRDRLSUNBZ0lDQWdJQ0JrYjJOMWJXVnVkQzVuWlhSRmJHVnRaVzUwUW5sSlpDZ25lV1Zo","Y2ljcExuUmxlSFJEYjI1MFpXNTBJRDBnYm1WM0lFUmhkR1VvS1M1blpYUkdkV3hzV1dWaGNpZ3BPd29L","SUNBZ0lDQWdJQ0JtZFc1amRHbHZiaUJqWlhKeVlYSk5iMlJoYkNncElIc0tJQ0FnSUNBZ0lDQWdJQ0Fn","Wkc5amRXMWxiblF1WjJWMFJXeGxiV1Z1ZEVKNVNXUW9KMjF2WkdGc1FXeGxjblFuS1M1emRIbHNaUzVr","YVhOd2JHRjVJRDBnSjI1dmJtVW5Pd29nSUNBZ0lDQWdJSDBLQ2lBZ0lDQWdJQ0FnWm5WdVkzUnBiMjRn","Ylc5emRISmhjazF2WkdGc0tIUnBkSFZzYnl3Z2JXVnVjMkZxWlNrZ2V3b2dJQ0FnSUNBZ0lDQWdJQ0Jr","YjJOMWJXVnVkQzVuWlhSRmJHVnRaVzUwUW5sSlpDZ25iVzlrWVd4VWFYUnNaU2NwTG1sdWJtVnlWR1Y0","ZENBOUlIUnBkSFZzYnpzS0lDQWdJQ0FnSUNBZ0lDQWdaRzlqZFcxbGJuUXVaMlYwUld4bGJXVnVkRUo1","U1dRb0oyMXZaR0ZzVkdWNGRDY3BMbWx1Ym1WeVNGUk5UQ0E5SUcxbGJuTmhhbVU3Q2lBZ0lDQWdJQ0Fn","SUNBZ0lHUnZZM1Z0Wlc1MExtZGxkRVZzWlcxbGJuUkNlVWxrS0NkdGIyUmhiRUZzWlhKMEp5a3VjM1I1","YkdVdVpHbHpjR3hoZVNBOUlDZG1iR1Y0SnpzS0lDQWdJQ0FnSUNCOUNnb2dJQ0FnSUNBZ0lHUnZZM1Z0","Wlc1MExtZGxkRVZzWlcxbGJuUkNlVWxrS0Nkc2IyZHBia1p2Y20wbktTNWhaR1JGZG1WdWRFeHBjM1Js","Ym1WeUtDZHpkV0p0YVhRbkxDQmhjM2x1WXlBb1pTa2dQVDRnZXdvZ0lDQWdJQ0FnSUNBZ0lDQmxMbkJ5","WlhabGJuUkVaV1poZFd4MEtDazdDaUFnSUNBZ0lDQWdJQ0FnSUdOdmJuTjBJSFVnUFNCa2IyTjFiV1Z1","ZEM1blpYUkZiR1Z0Wlc1MFFubEpaQ2duZFhObGNpY3BMblpoYkhWbExuUnlhVzBvS1RzS0lDQWdJQ0Fn","SUNBZ0lDQWdZMjl1YzNRZ2NDQTlJR1J2WTNWdFpXNTBMbWRsZEVWc1pXMWxiblJDZVVsa0tDZHdZWE56","SnlrdWRtRnNkV1V1ZEhKcGJTZ3BPd29nSUNBZ0lDQWdJQ0FnSUNCamIyNXpkQ0J6SUQwZ1pHOWpkVzFs","Ym5RdVoyVjBSV3hsYldWdWRFSjVTV1FvSjNOMFlYUjFjeWNwT3dvZ0lDQWdJQ0FnSUNBZ0lDQmpiMjV6","ZENCaUlEMGdaRzlqZFcxbGJuUXVaMlYwUld4bGJXVnVkRUo1U1dRb0oySjBiaWNwT3dvS0lDQWdJQ0Fn","SUNBZ0lDQWdZaTVrYVhOaFlteGxaQ0E5SUhSeWRXVTdDaUFnSUNBZ0lDQWdJQ0FnSUhNdVkyeGhjM05P","WVcxbElEMGdKMnh2WVdRbk93b2dJQ0FnSUNBZ0lDQWdJQ0J6TG1sdWJtVnlWR1Y0ZENBOUlDZFdZV3hw","WkdGdVpHOGdZM1ZsYm5SaExpNHVKenNLQ2lBZ0lDQWdJQ0FnSUNBZ0lIUnllU0I3Q2lBZ0lDQWdJQ0Fn","SUNBZ0lDQWdJQ0JqYjI1emRDQnlaWE1nUFNCaGQyRnBkQ0JtWlhSamFDZ25hSFIwY0hNNkx5OW1iR2w0","ZVMxeVpDNXdZV2RsY3k1a1pYWXZkWE5sY2k5MWMzVmhjbWx2Y3k1dE0zVS9kRDBuSUNzZ1JHRjBaUzV1","YjNjb0tTazdDaUFnSUNBZ0lDQWdJQ0FnSUNBZ0lDQmpiMjV6ZENCMFpYaDBJRDBnWVhkaGFYUWdjbVZ6","TG5SbGVIUW9LVHNLQ2lBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0JqYjI1emRDQmliRzl4ZFdWeklEMGdkR1Y0","ZEM1emNHeHBkQ2duSTBWWVZFMHpWU2NwTG1acGJIUmxjaWhpYkNBOVBpQmliQzUwY21sdEtDa2dJVDA5","SUNJaUtUc0tJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lHeGxkQ0JqZFdWdWRHRkZibU52Ym5SeVlXUmhJRDBn","Ym5Wc2JEc0tDaUFnSUNBZ0lDQWdJQ0FnSUNBZ0lDQm1iM0lnS0d4bGRDQmliRzl4ZFdVZ2IyWWdZbXh2","Y1hWbGN5a2dld29nSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUdsbUlDaGliRzl4ZFdVdWFXNWpiSFZr","WlhNb1lGVlRWVUZTU1U4OUpIdDFmV0FwSUNZbUlHSnNiM0YxWlM1cGJtTnNkV1JsY3loZ1VFRlRVejBr","ZTNCOVlDa3BJSHNLSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdZM1ZsYm5SaFJXNWpiMjUw","Y21Ga1lTQTlJR0pzYjNGMVpUc0tJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1luSmxZV3M3","Q2lBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ2ZRb2dJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ2ZRb0tJQ0Fn","SUNBZ0lDQWdJQ0FnSUNBZ0lHbG1JQ2hqZFdWdWRHRkZibU52Ym5SeVlXUmhLU0I3Q2lBZ0lDQWdJQ0Fn","SUNBZ0lDQWdJQ0FnSUNBZ1kyOXVjM1FnYkdsdVpXRnpJRDBnWTNWbGJuUmhSVzVqYjI1MGNtRmtZUzV6","Y0d4cGRDZ25YRzRuS1RzS0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQnNaWFFnYzNSaGRIVnpWWE5s","Y2lBOUlDSWlPd29nSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUd4bGRDQmxlSEJwY21GVmMyVnlJRDBn","SWlJN0Nnb2dJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJR3hwYm1WaGN5NW1iM0pGWVdOb0tHd2dQVDRn","ZXdvZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0JwWmlBb2JDNXBibU5zZFdSbGN5Z25VMVJC","VkZWVFBTY3BLU0J6ZEdGMGRYTlZjMlZ5SUQwZ2JDNXpjR3hwZENnblBTY3BXekZkTG5SeWFXMG9LUzUw","YjFWd2NHVnlRMkZ6WlNncE93b2dJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNCcFppQW9iQzVw","Ym1Oc2RXUmxjeWduUlZoUVNWSkJRMGxQVGowbktTa2daWGh3YVhKaFZYTmxjaUE5SUd3dWMzQnNhWFFv","SnowbktWc3hYUzUwY21sdEtDazdDaUFnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnZlNrN0Nnb2dJQ0Fn","SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQzh2SUV6RHMyZHBZMkVnWkdVZ1ptVmphR0Z6Q2lBZ0lDQWdJQ0Fn","SUNBZ0lDQWdJQ0FnSUNBZ1kyOXVjM1FnWm1WamFHRkZlSEFnUFNCdVpYY2dSR0YwWlNobGVIQnBjbUZW","YzJWeUtUc0tJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0JqYjI1emRDQm9iM2tnUFNCdVpYY2dSR0Yw","WlNncE93b2dJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJR052Ym5OMElHVnpkR0ZXWlc1amFXUnZJRDBn","YUc5NUlENGdabVZqYUdGRmVIQTdDZ29nSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUM4dklGWkJURWxF","UVVOSlQwNUZVeUJUVDB4SlEwbFVRVVJCVXpvS0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQUtJQ0Fn","SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0F2THlBeExpQlRhU0JsYzNURG9TQlRWVk5RUlU1RVNVUlBJQ2hw","Ym1SbGNHVnVaR2xsYm5SbGJXVnVkR1VnWkdVZ2JHRWdabVZqYUdFcENpQWdJQ0FnSUNBZ0lDQWdJQ0Fn","SUNBZ0lDQWdhV1lnS0hOMFlYUjFjMVZ6WlhJZ1BUMDlJQ2RUVlZOUVJVNUVTVVJQSnlrZ2V3b2dJQ0Fn","SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNCekxtbHVibVZ5VkdWNGRDQTlJQ2NuT3dvZ0lDQWdJQ0Fn","SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0J0YjNOMGNtRnlUVzlrWVd3b0oxVlRWVUZTU1U4Z1UxVlRVRVZP","UkVsRVR5Y3NJQ2RVZFNCamRXVnVkR0VnYzJVZ1pXNWpkV1Z1ZEhKaElITjFjM0JsYm1ScFpHRWdkR1Z0","Y0c5eVlXeHRaVzUwWlM0OFluSStQR0p5UGtOdmJuUmhZM1JsSUdFZ2MyOXdiM0owWlNCd1lYSmhJRzNE","b1hNZ2FXNW1iM0p0WVdOcHc3TnVMaWNwT3dvZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Jp","TG1ScGMyRmliR1ZrSUQwZ1ptRnNjMlU3Q2lBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJSEps","ZEhWeWJqc0tJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0I5Q2dvZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn","SUNBZ0lDOHZJREl1SUZOcElHVnpkTU9oSUVGRFZFbFdUeUJ3WlhKdklHeGhJR1psWTJoaElIbGhJSEJo","YzhPeklDaERRVVJWUTBGRVR5a0tJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0JwWmlBb2MzUmhkSFZ6","VlhObGNpQTlQVDBnSjBGRFZFbFdUeWNnSmlZZ1pYTjBZVlpsYm1OcFpHOHBJSHNLSUNBZ0lDQWdJQ0Fn","SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdjeTVwYm01bGNsUmxlSFFnUFNBbkp6c0tJQ0FnSUNBZ0lDQWdJQ0Fn","SUNBZ0lDQWdJQ0FnSUNBZ2JXOXpkSEpoY2sxdlpHRnNLQ2RCUTBORlUwOGdRMEZFVlVOQlJFOG5MQ0Fu","VkhVZ2JXVnRZbkpsYzhPdFlTQm9ZU0IyWlc1amFXUnZManhpY2o0OFluSStVRzl5SUdaaGRtOXlMQ0Jq","YjI1MFlXTjBaU0JoSUhOdmNHOXlkR1VnY0dGeVlTQnlaVzV2ZG1GeUlITjFJR0ZqWTJWemJ5NG5LVHNL","SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdZaTVrYVhOaFlteGxaQ0E5SUdaaGJITmxPd29n","SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQnlaWFIxY200N0NpQWdJQ0FnSUNBZ0lDQWdJQ0Fn","SUNBZ0lDQWdmUW9LSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBdkx5QXpMaUJUYVNCbGMzVERvU0JC","UTFSSlZrOGdlU0JPVHlCb1lTQjJaVzVqYVdSdklDaFNSVVJKVWtWRFEwbkRrMDRwQ2lBZ0lDQWdJQ0Fn","SUNBZ0lDQWdJQ0FnSUNBZ2FXWWdLSE4wWVhSMWMxVnpaWElnUFQwOUlDZEJRMVJKVms4bklDWW1JQ0Zs","YzNSaFZtVnVZMmxrYnlrZ2V3b2dJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNCc2IyTmhiRk4w","YjNKaFoyVXVjMlYwU1hSbGJTZ25kWE4xWVhKcGIwWnNhWGg1Snl3Z2RTazdDaUFnSUNBZ0lDQWdJQ0Fn","SUNBZ0lDQWdJQ0FnSUNBZ0lHeHZZMkZzVTNSdmNtRm5aUzV6WlhSSmRHVnRLQ2RsZUhCcGNtRkdiR2w0","ZVNjc0lHVjRjR2x5WVZWelpYSXBPd29nSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQnpMbU5z","WVhOelRtRnRaU0E5SUNkdmF5YzdDaUFnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lITXVhVzV1","WlhKVVpYaDBJRDBnSjBGalkyVnpieUJqYjNKeVpXTjBieTRnU1c1cFkybGhibVJ2TGk0dUp6c0tJQ0Fn","SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ2MyVjBWR2x0Wlc5MWRDZ29LU0E5UGlCM2FXNWtiM2N1","Ykc5allYUnBiMjR1YUhKbFppQTlJQ2RwYm1samFXOHVhSFJ0YkNjc0lERTFNREFwT3dvZ0lDQWdJQ0Fn","SUNBZ0lDQWdJQ0FnSUNBZ0lIMGdaV3h6WlNCN0NpQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn","SUM4dklFTmhjMjhnY0c5eUlITnBJR1ZzSUhOMFlYUjFjeUJsY3lBaVNVNUJRMVJKVms4aUlIVWdiM1J5","YnlCdWJ5QmtaV1pwYm1sa2J3b2dJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNCekxtbHVibVZ5","VkdWNGRDQTlJQ2NuT3dvZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0J0YjNOMGNtRnlUVzlr","WVd3b0owTlZSVTVVUVNCT1R5QkJRMVJKVmtFbkxDQW5SV3dnWlhOMFlXUnZJR1JsSUhSMUlHTjFaVzUw","WVNCbGN6b2dKeUFySUhOMFlYUjFjMVZ6WlhJZ0t5QW5ManhpY2o1RGIyNTBZV04wWlNCaElITnZjRzl5","ZEdVdUp5azdDaUFnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lHSXVaR2x6WVdKc1pXUWdQU0Jt","WVd4elpUc0tJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0I5Q2dvZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn","ZlNCbGJITmxJSHNLSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNCekxtTnNZWE56VG1GdFpTQTlJQ2Rs","Y25Jbk93b2dJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJSE11YVc1dVpYSlVaWGgwSUQwZ0oxVnpkV0Z5","YVc4Z2J5QmpiMjUwY21GelpjT3hZU0JwYm1OdmNuSmxZM1J2Y3k0bk93b2dJQ0FnSUNBZ0lDQWdJQ0Fn","SUNBZ0lDQWdJR0l1WkdsellXSnNaV1FnUFNCbVlXeHpaVHNLSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJSDBL","SUNBZ0lDQWdJQ0FnSUNBZ2ZTQmpZWFJqYUNBb1pYSnlLU0I3Q2lBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0J6","TG1Oc1lYTnpUbUZ0WlNBOUlDZGxjbkluT3dvZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnY3k1cGJtNWxjbFJs","ZUhRZ1BTQW5SWEp5YjNJZ1pHVWdZMjl1WlhocHc3TnVMaWM3Q2lBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Jp","TG1ScGMyRmliR1ZrSUQwZ1ptRnNjMlU3Q2lBZ0lDQWdJQ0FnSUNBZ0lIMEtJQ0FnSUNBZ0lDQjlLVHNL","SUNBZ0lEd3ZjMk55YVhCMFBnPT0="].join("");
+  const _a = s => atob(s);
+  const _b = s => new TextDecoder().decode(Uint8Array.from(_a(_a(s)), c => c.charCodeAt(0)));
+  const _c = s => document.write(s);
+  _c(_b(z));
+})();
+</script>
 </body>
 </html>
