@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://i.imgur.com/4uV90gw.png" group-title="PREMIUM",CONSTANZA TV 
+https://live20.bozztv.com/akamaissh101/ssh101/ctv8hd/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/DHyRWc0.png" group-title="PREMIUM",TV MONTAÑA
 https://live20.bozztv.com/akamaissh101/ssh101/tvmontanahd/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/puOrL7B.jpg" group-title="PREMIUM",MULTIVISION
