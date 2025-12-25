@@ -1,8 +1,8 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://imgur.com/QWR9SOH.png" group-title="PREMIUM",ATABAL TV
-https://vdopanel.jlahozconsulting.com:3648/live/atabaltvlive.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/0fWQS53.png" group-title="PREMIUM",NUEVA VISIÓN TV
-https://live20.bozztv.com/akamaissh101/ssh101/nuevavisionhd/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/lNpgFAU.png" group-title="PREMIUM",VALLEVISION
+https://streaming.telecablecentral.com.do/Vallevision/ValleHD/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/zKWFgeQ.png" group-title="PREMIUM",ANTENA 7
+http://38.159.227.126:8000/play/a05d/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/Ql2eaP0.png" group-title="PREMIUM",Tele Altura
 https://live20.bozztv.com/akamaissh101/ssh101/codificador7/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/4uV90gw.png" group-title="PREMIUM",CONSTANZA TV
