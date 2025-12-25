@@ -1,6 +1,10 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://www.vivalivetv.com/public/files/shows/0/1/2896-294x165-FFFFFF.jpg" group-title="REP. DOMINICANA",La Ruta TV
-https://streamunoapp.com:3983/live/larutatvlive.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/Zv8CxZX.png" group-title="REP. DOMINICANA",La Voz de Maria
+https://live.lavozdemaria.com:3436/live/lavozdemarialive.m3u8
+#EXTINF:-1 tvg-logo="https://gia.tv/streams/pstream/208429.png" group-title="REP. DOMINICANA",La Voz de Jesús HD
+https://live20.bozztv.com/giatvplayout7/giatv-208429/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://www.vivalivetv.com/public/files/shows/0/1/3386-294x165-FFFFFF.jpg" group-title="REP. DOMINICANA",La Reina TV
+https://cloud2.streaminglivehd.com:1936/lareinatv/lareinatv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://www.vivalivetv.com/public/files/shows/0/1/3807-294x165-FFFFFF.jpg" group-title="REP. DOMINICANA",La Hora TV
 https://cloud5.livescast.com:19360/lahoratv/lahoratv.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/EPYHUSc.jpeg" group-title="REP. DOMINICANA",Jimani TV
