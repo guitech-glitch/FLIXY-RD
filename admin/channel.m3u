@@ -1,7 +1,9 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://i.imgur.com/puOrL7B.jpg" group-title="PREMIUM",MULTIVISION
+https://5790d294af2dc.streamlock.net/MULTIVISIONRD/MULTIVISIONRD/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/EvX5aqI.png" group-title="PREMIUM",LUNA TV
 https://tv.wracanal10.com:3671/live/lunatvcanal53live.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/RvIkFxp.png" group-title="PREMIUM",Valle Nuevo TV
+#EXTINF:-1 tvg-logo="" group-title="PREMIUM",Valle Nuevo TV
 https://stmv6.voxtvhd.com.br/vallenuevotv/vallenuevotv/playlist.m3u8
 #EXTINF:-1 tvg-logo="" group-title="ARGENTINA",La Vitrola TV
 https://stmvideo6.livecastv.com/vitrola4/vitrola4/chunklist_w2066215111.m3u8
