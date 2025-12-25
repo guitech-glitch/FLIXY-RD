@@ -1,5 +1,7 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://i.imgur.com/puOrL7B.jpg" group-title="PREMIUM",MULTIVISION 
+#EXTINF:-1 tvg-logo="https://i.imgur.com/DHyRWc0.png" group-title="PREMIUM",TV MONTAÑA
+https://live20.bozztv.com/akamaissh101/ssh101/tvmontanahd/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/puOrL7B.jpg" group-title="PREMIUM",MULTIVISION
 https://5790d294af2dc.streamlock.net/MULTIVISIONRD/MULTIVISIONRD/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/VqxSsZD.png" group-title="PREMIUM",ELIAS PIÑA TV
 https://cloud2.streaminglivehd.com:1936/8078/8078/playlist.m3u8
