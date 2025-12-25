@@ -1,20 +1,18 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://i.imgur.com/rkgWToA.jpg" group-title="PREMIUM",COLOR VISION TV
-http://190.110.36.254/COLORVISION/index.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/ZeUgLCa.png" group-title="DEPORTES",Colimdo TV
-https://cnn.livestreaminggroup.info:3132/live/colimdotvlive.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/MpTgJMJ.png" group-title="PREMIUM",Claro Visión TV
-https://streamunoapp.com:3057/live/clarovisiontvlive.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/SbuD1UW.png" group-title="PREMIUM",Alsacias Televisión
-https://s.emisoras.tv:8081/atv/index.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/mJN2XNm.png" group-title="PREMIUM",Cinevision Canal 19
-https://cdn.mycloudstream.io/hls/live/broadcast/etyetihk/index.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/iHjdckl.png" group-title="PREMIUM",Cibaeña TV
-https://streamunoapp.com:3958/live/cibaenatvlive.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/ShPaOvn.jpg" group-title="PREMIUM",Cenovision HD
-https://5790d294af2dc.streamlock.net/cenovision/cenovision/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/DEUR7mB.png" group-title="PREMIUM",Cáscara TV
-https://ss2.tvrdomi.com:1936/cascaratv/cascaratv/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/D6gAezp.png" group-title="PREMIUM",Cotubanama TV
+https://host.streamingnation.live/p/3588/hybrid/play.m3u8
+#EXTINF:-1 tvg-logo="https://colometv.com/assets/images/logo.png" group-title="PREMIUM",COLOME TV
+https://ss2.tvrdomi.com:1936/colometv/colometv/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/CnAc7jU.png" group-title="PREMIUM",COCO TV
+https://cloudflare.streamgato.us:3253/live/canalcocotvlive.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/fJD7OxB.png" group-title="PREMIUM",Claro Televisión Dominicana
+https://streamunoapp.com:3960/live/claroteledomlive.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/sxFh1dw.png" group-title="PREMIUM",AZTECA HONDURAS
+https://dvrfl03.bozztv.com/hondu-azteca/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/2PNw6BA.png" group-title="PREMIUM",Cielo TV
+https://streaming.servervideo.net:1936/cielotv/cielotv/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/ybud4dI.png" group-title="PREMIUM",Chinola TV
+https://tv.wracanal10.com:3300/live/chinolatvlive.m3u8
 #EXTINF:-1 tvg-logo="https://canaldahd.com/wp-content/uploads/2023/03/cropped-canaldahdlogo-1.png" group-title="PREMIUM",Canalda 26 HD
 https://canalda.rgradio.net:3084/live/canaldalive.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/gK0M1jB.png" group-title="PREMIUM",Canal del Sol
@@ -35,7 +33,7 @@ https://vdo.voxhdnet.com:3159/stream/play.m3u8
 https://ss2.tvrdomi.com:1936/ame47/ame47/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co/C3fdPYGs/Alcarrizo.jpg" group-title="PREMIUM",ALCARRIZOS TV
 https://5790d294af2dc.streamlock.net/alcarrizostv/alcarrizostv/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/0pDy6f4.png" group-title="PREMIUM",PLUTO DEPORTES
+#EXTINF:-1 tvg-logo="https://i.imgur.com/0pDy6f4.png" group-title="PLUTO TV AR",DEPORTES
 https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5dcde07af1c85b0009b18651/master.m3u8?advertisingId=&appName=web&appVersion=5.14.0-0f5ca04c21649b8c8aad4e56266a23b96d73b83a&app_name=web&clientDeviceType=0&clientID=6fbead95-26b1-415d-998f-1bdef62d10be&clientModelNumber=na&deviceDNT=false&deviceId=6fbead95-26b1-415d-998f-1bdef62d10be&deviceLat=19.4358&deviceLon=-99.1441&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=88.0.4324.150&marketingRegion=VE&serverSideAds=false&sessionID=b8e5a857-714a-11eb-b532-0242ac110002&sid=b8e5a857-714a-11eb-b532-0242ac110002&userId=
 #EXTINF:-1 tvg-logo="https://i.imgur.com/8ddFdSQ.png" group-title="CINE",COMEDIA MADE IN SPAIN
 https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f1abce155a03d0007718834/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5f1abce155a03d0007718834&deviceLat=41.1167&deviceLon=1.2500&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=ES&serverSideAds=false&sid=505&terminate=false&userId=
