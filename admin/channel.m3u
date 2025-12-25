@@ -1,14 +1,14 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://i.imgur.com/IAYydpi.png" group-title="REP. DOMINICANA",HAY TV
+#EXTINF:-1 tvg-logo="https://i.imgur.com/cbKgcGh.png" group-title="PREMIUM",Hermanas Mirabal TV
 https://cnn.essastream.com:3091/live/hmtvlive.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/1rQaROm.png" group-title="REP. DOMINICANA",Global TV
-https://stmv4.voxtvhd.com.br/globaltv/globaltv/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/xhkiiO3.png" group-title="REP. DOMINICANA",GH Televisión
-https://tv.ghtelevision.com:3018/live/ghtelevisionlive.m3u8
-#EXTINF:-1 tvg-logo="https://grupomediosdelnorte.com/iptv/galaxia.png" group-title="REP. DOMINICANA",Galaxia Teve
-https://streaming.grupomediosdelnorte.com:19360/galaxiateve/galaxiateve.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/YtdOXWb.png" group-title="REP. DOMINICANA",FaroVisión
-https://streamtv.intervenhosting.net:3754/hybrid/play.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/eoodUNJ.png" group-title="REP. DOMINICANA",Haina Visión
+https://cdn.streamingcpanel.com:3447/live/hainavisionlive.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/br9TNG8.png" group-title="REP. DOMINICANA",GI Televisión
+https://canal.gitelevisionserver.com/live/DIEEFIh506fL8huspvl0f0c2PZF3/index.m3u8
+#EXTINF:-1 tvg-logo="https://www.lyngsat.com/logo/tv/gg/get-tv-do.png" group-title="REP. DOMINICANA",Get TV
+https://cnn.livestreaminggroup.info:3050/live/gettvlive.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/T9vWjeB.png" group-title="REP. DOMINICANA",Fuego TV
+https://video.misistemareseller.com/Fuegotv/Fuegotv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://www.vivalivetv.com/public/files/shows/0/1/3780-294x165-FFFFFF.jpg" group-title="PREMIUM",Xtra86.NET
 https://samson.streamerr.co:8081/xtelevisionrd/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://www.vivalivetv.com/public/files/shows/0/1/3508-294x165-FFFFFF.jpg" group-title="REP. DOMINICANA",Entérate RD
@@ -63,7 +63,7 @@ https://vdo.voxhdnet.com:3159/stream/play.m3u8
 https://ss2.tvrdomi.com:1936/ame47/ame47/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co/C3fdPYGs/Alcarrizo.jpg" group-title="PREMIUM",ALCARRIZOS TV
 https://5790d294af2dc.streamlock.net/alcarrizostv/alcarrizostv/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/0pDy6f4.png" group-title="PREMIUM",PLUTO DEPORTES
+#EXTINF:-1 tvg-logo="https://i.imgur.com/0pDy6f4.png" group-title="PLUTO TV AR",PLUTO DEPORTES
 https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5dcde07af1c85b0009b18651/master.m3u8?advertisingId=&appName=web&appVersion=5.14.0-0f5ca04c21649b8c8aad4e56266a23b96d73b83a&app_name=web&clientDeviceType=0&clientID=6fbead95-26b1-415d-998f-1bdef62d10be&clientModelNumber=na&deviceDNT=false&deviceId=6fbead95-26b1-415d-998f-1bdef62d10be&deviceLat=19.4358&deviceLon=-99.1441&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=88.0.4324.150&marketingRegion=VE&serverSideAds=false&sessionID=b8e5a857-714a-11eb-b532-0242ac110002&sid=b8e5a857-714a-11eb-b532-0242ac110002&userId=
 #EXTINF:-1 tvg-logo="https://i.imgur.com/8ddFdSQ.png" group-title="CINE",COMEDIA MADE IN SPAIN
 https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f1abce155a03d0007718834/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5f1abce155a03d0007718834&deviceLat=41.1167&deviceLon=1.2500&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=ES&serverSideAds=false&sid=505&terminate=false&userId=
@@ -103,7 +103,7 @@ https://5790d294af2dc.streamlock.net/MULTIVISIONRD/MULTIVISIONRD/playlist.m3u8
 https://cloud2.streaminglivehd.com:1936/8078/8078/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/isXlMAh.png" group-title="REP. DOMINICANA",CANANGA VISION
 https://cdn.streamingcpanel.com:3545/live/canangatlive.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/EvX5aqI.png" group-title="REP. DOMINICANA",LUNA TV
+#EXTINF:-1 tvg-logo="https://i.imgur.com/EvX5aqI.png" group-title="PREMIUM",LUNA TV
 https://tv.wracanal10.com:3671/live/lunatvcanal53live.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/RvIkFxp.png" group-title="REP. DOMINICANA",Valle Nuevo TV
 https://stmv6.voxtvhd.com.br/vallenuevotv/vallenuevotv/playlist.m3u8
