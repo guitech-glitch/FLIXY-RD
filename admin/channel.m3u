@@ -1,6 +1,6 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://imgur.com/B3PrrMH.png" group-title="PREMIUM",ZonaVisión TV
-https://ds.tvabierta.net/memfs/b295f254-7af9-45e4-bfc6-7e0bba41929d.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/0fWQS53.png" group-title="PREMIUM",NUEVA VISION
+https://live20.bozztv.com/akamaissh101/ssh101/nuevavisionhd/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/QWR9SOH.png" group-title="PREMIUM",ATABAL TV
 https://vdopanel.jlahozconsulting.com:3648/live/atabaltvlive.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/PBgQi9a.png" group-title="PREMIUM",GUAYMATE TV
