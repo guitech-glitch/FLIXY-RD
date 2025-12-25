@@ -1,7 +1,7 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://i.imgur.com/352jxnd.png" group-title="PREMIUM",VEGA VISION CANAL 18
-https://rdn.essastream.com:3400/live/canal18hdlive.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/352jxnd.png" group-title="PREMIUM",VEGVISION
+#EXTINF:-1 tvg-logo="https://imgur.com/QWR9SOH.png" group-title="PREMIUM",ATABAL TV
+https://vdopanel.jlahozconsulting.com:3648/live/atabaltvlive.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/352jxnd.png" group-title="PREMIUM",VEGAVISION
 https://rdn.essastream.com:3400/live/canal18hdlive.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/lNpgFAU.png" group-title="PREMIUM",VALLEVISION
 https://streaming.telecablecentral.com.do/Vallevision/ValleHD/playlist.m3u8
