@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://imgur.com/0fWQS53.png" group-title="PREMIUM",NUEVA VISION
+https://live20.bozztv.com/akamaissh101/ssh101/nuevavisionhd/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/jiyMOZx.png" group-title="PREMIUM",VEGATEVE
 https://cloud6.livescast.com:3797/live/vegatevelive.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/B3PrrMH.png" group-title="PREMIUM",ZonaVisión TV
