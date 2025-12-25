@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://i.imgur.com/DEUR7mB.png" group-title="PREMIUM",Cáscara TV
+https://ss2.tvrdomi.com:1936/cascaratv/cascaratv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://canaldahd.com/wp-content/uploads/2023/03/cropped-canaldahdlogo-1.png" group-title="PREMIUM",Canalda 26 HD
 https://canalda.rgradio.net:3084/live/canaldalive.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/gK0M1jB.png" group-title="PREMIUM",Canal del Sol
