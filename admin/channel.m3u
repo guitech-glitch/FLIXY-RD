@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://iili.io/J1kV1Bn.png" group-title="DEPORTES",Iptv
+https://thm-it-roku.otteravision.com/thm/it/it.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/4hDCB1M.png" group-title="ARGENTINA",24/7 Canal Noticias
 https://panel.host-live.com:19360/cn247tv/cn247tv.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/u5ECnZd.png" group-title="REP. DOMINICANA",Mega Visión
