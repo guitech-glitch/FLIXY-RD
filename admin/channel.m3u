@@ -1,12 +1,10 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/ABC_News_Live_logo_2021.svg/512px-ABC_News_Live_logo_2021.svg.png" group-title="NOTICIAS",ABC NEWS LIVE
-https://content.uplynk.com/channel/3324f2467c414329b3b0cc5cd987b6be.m3u8
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb2sCmgBQ3pme8ph_nZoeYBh-h_fVFI_cYprhz32im6PLPqTzSuc--CDI&s=10" group-title="PREMIUM",HBO PLUS
-http://199.127.63.105:9090/278489_.m3u8
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7HWHve49nrZcVjmg_Y-OI-Nx_oL46L-76qL91INvMjBDlA5nvuyG41oMk&s=10" group-title="EE.UU LATINO",Telemundo Acción
-https://xumo-drct-ch835-ekq0p.fast.nbcuni.com/live/master.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/b9/Sony_Channel_Logo.png" group-title="PREMIUM",Sony Channel
-http://104.238.222.251:9090/278405_.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/OamBiS5.png" group-title="NOTICIAS",Canal 6 POSADAS
+https://iptv.ixfo.com.ar:30443/live/c6digital/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8jzXNLZ4grE_rvhRInXknuajJIu9CsSjoj1f1p6lwisk13uSNB0qlLt8&s=10" group-title="PREMIUM",HBO POP
+http://199.127.63.105:9090/278502_.m3u8
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsFLa_-8vVCurp6brHD0NjI6wLPHp3xqY6FDyoikOFAuxewhSuacxHnuA&s=10" group-title="PREMIUM",Golden
+http://104.194.8.54:9090/278479_.m3u8
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-t0aWKc4de4bgrb3_sQYSpi02LB4i0ZjUkFzPpiycKtmZfALYBdM&s=10" group-title="PREMIUM",Sony Movies
 http://104.194.8.54:9090/278471_.m3u8
 #EXTINF:-1 tvg-logo="https://3.bp.blogspot.com/-ifCagZ77nfw/W6ls2LsJInI/AAAAAAAAAN0/_I_JmomLjTQi9WTGmoACu3q4mRNmJW03wCPcBGAYYCw/s1600/space.png" group-title="PREMIUM",Space
