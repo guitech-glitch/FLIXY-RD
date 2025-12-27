@@ -1,6 +1,6 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES900002ZD_20250422T103210SQUARE.png" group-title="CINE",Todo Pasión 
-https://d3ng12uij4vzn7.cloudfront.net/v1/manifest/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-zxw9tagebrg7m/3fb9245d-6a84-4a8b-af57-16a3f2958efd/3.m3u8
+#EXTINF:-1 tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBC2700008SK_20241022T051028SQUARE.png" group-title="COMEDIA", Just For Laughs
+https://36cd2ac3e37f411aa72b1d27cfd32791.mediatailor.us-east-1.amazonaws.com/v1/manifest/0fb304b2320b25f067414d481a779b77db81760d/Samsung-es_JustForLaughsGags/2d6749f1-43a6-4988-824a-d76b47429efd/2.m3u8
 #EXTINF:-1 tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES26000068D_20241126T043113SQUARE.png" group-title="CULTURA",ESTILO Y VIDA
 https://lifestyle-rakuten-tv-es.fast.rakuten.tv/v1/manifest/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6232/bd639e07-1a74-4ae8-9a55-e0abd14f3da8/4.m3u8
 #EXTINF:-1 tvg-logo="" group-title="NOVELAS",Telenovelas
