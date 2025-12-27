@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBD3000002GP_20251209T004304SQUARE.png" group-title="ESPAÑA",Canal Sur Andalucia
+https://dfk2a268yviz9.cloudfront.net/v1/manifest/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-ddiii1m6jt6of/daea73ec-f516-4706-bd5a-c754baa3eab2/0.m3u8
 #EXTINF:-1 tvg-logo="" group-title="NOVELAS",Telenovelas
 https://dr5brv21nqxbh.cloudfront.net/v1/manifest/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-hsq1fqenqk16z/fb813330-0d89-4ff6-aa39-c5ae11257317/0.m3u8
 #EXTINF:-1 tvg-logo="https://www.avivamiento.com/assets_nw/img/cma/logo_white.png" group-title="COLOMBIA",Avivamiento  TV
