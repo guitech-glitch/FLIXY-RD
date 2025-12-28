@@ -1,6 +1,6 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="" group-title="NOVELAS",Telenovelas
-https://dtsszjrztq9ti.cloudfront.net/v1/manifest/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-yshah5p4v45g1/9fd2d16c-a1c1-47a6-bf0f-eef5e5a1544e/3.m3u8
+#EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/473dc750652d9ae1930de51f914033d7.webp" group-title="DEPORTES",MLB Network En Vivo
+https://d1yqxv6gx128ca.cloudfront.net/v1/manifest/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-mmpgjr4zitcp0/97642aa7-1341-4136-9154-a2f056aa430e/0.m3u8
 #EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/2ecbfa8a3f25cc1212dbcd975383b55a.webp" group-title="DEPORTES",Azteca Deportrs
 https://azt-mun.otteravision.com/azt/mun/mun_720p_high.m3u8
 #EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/8f667db78acfeca3e792be86616ee96f.webp" group-title="CINE",Cine Friki
@@ -27,7 +27,7 @@ https://multimedia.eitb.eus/live-content/oka3hd-hls/master.m3u8
 https://36cd2ac3e37f411aa72b1d27cfd32791.mediatailor.us-east-1.amazonaws.com/v1/manifest/0fb304b2320b25f067414d481a779b77db81760d/Samsung-es_JustForLaughsGags/2d6749f1-43a6-4988-824a-d76b47429efd/2.m3u8
 #EXTINF:-1 tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES26000068D_20241126T043113SQUARE.png" group-title="CULTURA",ESTILO Y VIDA
 https://lifestyle-rakuten-tv-es.fast.rakuten.tv/v1/manifest/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6232/bd639e07-1a74-4ae8-9a55-e0abd14f3da8/4.m3u8
-#EXTINF:-1 tvg-logo="" group-title="NOVELAS",Telenovelas
+#EXTINF:-1 tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES3600001Y7_20251013T053510SQUARE.png" group-title="NOVELAS",REBELDE
 https://dr5brv21nqxbh.cloudfront.net/v1/manifest/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-hsq1fqenqk16z/fb813330-0d89-4ff6-aa39-c5ae11257317/0.m3u8
 #EXTINF:-1 tvg-logo="" group-title="PREMIUM",Canal
 https://raw.githubusercontent.com/HelmerLuzo/SamsungTVPlus_HL/refs/heads/main/tv/m3u/SamsungTVPlus_tv_ES.m3u
