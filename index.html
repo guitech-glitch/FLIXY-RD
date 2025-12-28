@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>FLIXY RD - Acceso</title>
+    <title>NUVIX</title>
     <style>
         :root {
             --azul: #0070f3;
@@ -41,14 +41,7 @@
             padding: 20px 0;
         }
 
-        .logo {
-            font-size: 36px;
-            font-weight: 900;
-            margin-bottom: 5px;
-            letter-spacing: -1.5px;
-        }
-        .logo .blue { color: var(--azul); }
-        .logo .red { color: var(--rojo); }
+        .logo img { max-width: 50%; height: auto; }
 
         .subtitle {
             color: #eee;
@@ -81,7 +74,7 @@
 
         .login-btn:disabled { background: #444; cursor: not-allowed; }
 
-        #status { margin-top: 25px; font-size: 14px; min-height: 20px; }
+        #status { margin-top: 25px; font-size: 14px; min-height: 20px; text-align: center; width: 100%; }
 
         /* MODAL */
         .modal-overlay {
@@ -118,7 +111,9 @@
 
     <div class="main-content">
         <div class="login-container">
-            <div class="logo"><span class="blue">FLIX</span><span class="red">RD</span></div>
+            <div class="logo">
+                <img src="img/img.png" alt="Logo">
+            </div>
             <div class="subtitle">Streaming Premium</div>
             
             <form id="loginForm">
@@ -143,19 +138,128 @@
     </div>
 
     <footer>
-        <div style="letter-spacing: 2px; text-transform: uppercase; font-weight: 600; color: rgba(255,255,255,0.5); margin-bottom: 4px;">by Gi Tech</div>
+        <div style="letter-spacing: 2px; text-transform: uppercase; font-weight: 600; color: rgba(255,255,255,0.5); margin-bottom: 4px;">by Gui Tech</div>
         <div> © <span id="year"></span></div>
     </footer>
 
-   <script>
-(function(){
-  const z = ["UEhOamNtbHdkRDRLSUNBZ0lDQWdJQ0JrYjJOMWJXVnVkQzVuWlhSRmJHVnRaVzUwUW5sSlpDZ25lV1Zo","Y2ljcExuUmxlSFJEYjI1MFpXNTBJRDBnYm1WM0lFUmhkR1VvS1M1blpYUkdkV3hzV1dWaGNpZ3BPd29L","SUNBZ0lDQWdJQ0JtZFc1amRHbHZiaUJqWlhKeVlYSk5iMlJoYkNncElIc0tJQ0FnSUNBZ0lDQWdJQ0Fn","Wkc5amRXMWxiblF1WjJWMFJXeGxiV1Z1ZEVKNVNXUW9KMjF2WkdGc1FXeGxjblFuS1M1emRIbHNaUzVr","YVhOd2JHRjVJRDBnSjI1dmJtVW5Pd29nSUNBZ0lDQWdJSDBLQ2lBZ0lDQWdJQ0FnWm5WdVkzUnBiMjRn","Ylc5emRISmhjazF2WkdGc0tIUnBkSFZzYnl3Z2JXVnVjMkZxWlNrZ2V3b2dJQ0FnSUNBZ0lDQWdJQ0Jr","YjJOMWJXVnVkQzVuWlhSRmJHVnRaVzUwUW5sSlpDZ25iVzlrWVd4VWFYUnNaU2NwTG1sdWJtVnlWR1Y0","ZENBOUlIUnBkSFZzYnpzS0lDQWdJQ0FnSUNBZ0lDQWdaRzlqZFcxbGJuUXVaMlYwUld4bGJXVnVkRUo1","U1dRb0oyMXZaR0ZzVkdWNGRDY3BMbWx1Ym1WeVNGUk5UQ0E5SUcxbGJuTmhhbVU3Q2lBZ0lDQWdJQ0Fn","SUNBZ0lHUnZZM1Z0Wlc1MExtZGxkRVZzWlcxbGJuUkNlVWxrS0NkdGIyUmhiRUZzWlhKMEp5a3VjM1I1","YkdVdVpHbHpjR3hoZVNBOUlDZG1iR1Y0SnpzS0lDQWdJQ0FnSUNCOUNnb2dJQ0FnSUNBZ0lHUnZZM1Z0","Wlc1MExtZGxkRVZzWlcxbGJuUkNlVWxrS0Nkc2IyZHBia1p2Y20wbktTNWhaR1JGZG1WdWRFeHBjM1Js","Ym1WeUtDZHpkV0p0YVhRbkxDQmhjM2x1WXlBb1pTa2dQVDRnZXdvZ0lDQWdJQ0FnSUNBZ0lDQmxMbkJ5","WlhabGJuUkVaV1poZFd4MEtDazdDaUFnSUNBZ0lDQWdJQ0FnSUdOdmJuTjBJSFVnUFNCa2IyTjFiV1Z1","ZEM1blpYUkZiR1Z0Wlc1MFFubEpaQ2duZFhObGNpY3BMblpoYkhWbExuUnlhVzBvS1RzS0lDQWdJQ0Fn","SUNBZ0lDQWdZMjl1YzNRZ2NDQTlJR1J2WTNWdFpXNTBMbWRsZEVWc1pXMWxiblJDZVVsa0tDZHdZWE56","SnlrdWRtRnNkV1V1ZEhKcGJTZ3BPd29nSUNBZ0lDQWdJQ0FnSUNCamIyNXpkQ0J6SUQwZ1pHOWpkVzFs","Ym5RdVoyVjBSV3hsYldWdWRFSjVTV1FvSjNOMFlYUjFjeWNwT3dvZ0lDQWdJQ0FnSUNBZ0lDQmpiMjV6","ZENCaUlEMGdaRzlqZFcxbGJuUXVaMlYwUld4bGJXVnVkRUo1U1dRb0oySjBiaWNwT3dvS0lDQWdJQ0Fn","SUNBZ0lDQWdZaTVrYVhOaFlteGxaQ0E5SUhSeWRXVTdDaUFnSUNBZ0lDQWdJQ0FnSUhNdVkyeGhjM05P","WVcxbElEMGdKMnh2WVdRbk93b2dJQ0FnSUNBZ0lDQWdJQ0J6TG1sdWJtVnlWR1Y0ZENBOUlDZFdZV3hw","WkdGdVpHOGdZM1ZsYm5SaExpNHVKenNLQ2lBZ0lDQWdJQ0FnSUNBZ0lIUnllU0I3Q2lBZ0lDQWdJQ0Fn","SUNBZ0lDQWdJQ0JqYjI1emRDQnlaWE1nUFNCaGQyRnBkQ0JtWlhSamFDZ25hSFIwY0hNNkx5OW1iR2w0","ZVMxeVpDNXdZV2RsY3k1a1pYWXZkWE5sY2k5aFpHMXBiblZ6WlhJdWJUTjFQM1E5SnlBcklFUmhkR1V1","Ym05M0tDa3BPd29nSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdZMjl1YzNRZ2RHVjRkQ0E5SUdGM1lXbDBJSEps","Y3k1MFpYaDBLQ2s3Q2dvZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnWTI5dWMzUWdZbXh2Y1hWbGN5QTlJSFJs","ZUhRdWMzQnNhWFFvSnlORldGUk5NMVVuS1M1bWFXeDBaWElvWW13Z1BUNGdZbXd1ZEhKcGJTZ3BJQ0U5","UFNBaUlpazdDaUFnSUNBZ0lDQWdJQ0FnSUNBZ0lDQnNaWFFnWTNWbGJuUmhSVzVqYjI1MGNtRmtZU0E5","SUc1MWJHdzdDZ29nSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdabTl5SUNoc1pYUWdZbXh2Y1hWbElHOW1JR0pz","YjNGMVpYTXBJSHNLSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNCcFppQW9ZbXh2Y1hWbExtbHVZMngx","WkdWektHQlZVMVZCVWtsUFBTUjdkWDFnS1NBbUppQmliRzl4ZFdVdWFXNWpiSFZrWlhNb1lGQkJVMU05","Skh0d2ZXQXBLU0I3Q2lBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJR04xWlc1MFlVVnVZMjl1","ZEhKaFpHRWdQU0JpYkc5eGRXVTdDaUFnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lHSnlaV0Zy","T3dvZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lIMEtJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lIMEtDaUFn","SUNBZ0lDQWdJQ0FnSUNBZ0lDQnBaaUFvWTNWbGJuUmhSVzVqYjI1MGNtRmtZU2tnZXdvZ0lDQWdJQ0Fn","SUNBZ0lDQWdJQ0FnSUNBZ0lHTnZibk4wSUd4cGJtVmhjeUE5SUdOMVpXNTBZVVZ1WTI5dWRISmhaR0V1","YzNCc2FYUW9KMXh1SnlrN0NpQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdiR1YwSUhOMFlYUjFjMVZ6","WlhJZ1BTQWlJanNLSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNCc1pYUWdaWGh3YVhKaFZYTmxjaUE5","SUNJaU93b0tJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0JzYVc1bFlYTXVabTl5UldGamFDaHNJRDAr","SUhzS0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnYVdZZ0tHd3VhVzVqYkhWa1pYTW9KMU5V","UVZSVlV6MG5LU2tnYzNSaGRIVnpWWE5sY2lBOUlHd3VjM0JzYVhRb0p6MG5LVnN4WFM1MGNtbHRLQ2t1","ZEc5VmNIQmxja05oYzJVb0tUc0tJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ2FXWWdLR3d1","YVc1amJIVmtaWE1vSjBWWVVFbFNRVU5KVDA0OUp5a3BJR1Y0Y0dseVlWVnpaWElnUFNCc0xuTndiR2ww","S0NjOUp5bGJNVjB1ZEhKcGJTZ3BPd29nSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUgwcE93b0tJQ0Fn","SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0F2THlCTXc3Tm5hV05oSUdSbElHWmxZMmhoY3dvZ0lDQWdJQ0Fn","SUNBZ0lDQWdJQ0FnSUNBZ0lHTnZibk4wSUdabFkyaGhSWGh3SUQwZ2JtVjNJRVJoZEdVb1pYaHdhWEpo","VlhObGNpazdDaUFnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnWTI5dWMzUWdhRzk1SUQwZ2JtVjNJRVJo","ZEdVb0tUc0tJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0JqYjI1emRDQmxjM1JoVm1WdVkybGtieUE5","SUdodmVTQStJR1psWTJoaFJYaHdPd29LSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBdkx5QldRVXhK","UkVGRFNVOU9SVk1nVTA5TVNVTkpWRUZFUVZNNkNpQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdDaUFn","SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnTHk4Z01TNGdVMmtnWlhOMHc2RWdVMVZUVUVWT1JFbEVUeUFv","YVc1a1pYQmxibVJwWlc1MFpXMWxiblJsSUdSbElHeGhJR1psWTJoaEtRb2dJQ0FnSUNBZ0lDQWdJQ0Fn","SUNBZ0lDQWdJR2xtSUNoemRHRjBkWE5WYzJWeUlEMDlQU0FuVTFWVFVFVk9SRWxFVHljcElIc0tJQ0Fn","SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ2N5NXBibTVsY2xSbGVIUWdQU0FuSnpzS0lDQWdJQ0Fn","SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnYlc5emRISmhjazF2WkdGc0tDZFZVMVZCVWtsUElGTlZVMUJG","VGtSSlJFOG5MQ0FuVkhVZ1kzVmxiblJoSUhObElHVnVZM1ZsYm5SeVlTQnpkWE53Wlc1a2FXUmhJSFJs","YlhCdmNtRnNiV1Z1ZEdVdVBHSnlQanhpY2o1RGIyNTBZV04wWlNCaElITnZjRzl5ZEdVZ2NHRnlZU0J0","dzZGeklHbHVabTl5YldGamFjT3piaTRuS1RzS0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn","WWk1a2FYTmhZbXhsWkNBOUlHWmhiSE5sT3dvZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0J5","WlhSMWNtNDdDaUFnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnZlFvS0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn","SUNBZ0lDQXZMeUF5TGlCVGFTQmxjM1REb1NCQlExUkpWazhnY0dWeWJ5QnNZU0JtWldOb1lTQjVZU0J3","WVhQRHN5QW9RMEZFVlVOQlJFOHBDaUFnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnYVdZZ0tITjBZWFIx","YzFWelpYSWdQVDA5SUNkQlExUkpWazhuSUNZbUlHVnpkR0ZXWlc1amFXUnZLU0I3Q2lBZ0lDQWdJQ0Fn","SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJSE11YVc1dVpYSlVaWGgwSUQwZ0p5YzdDaUFnSUNBZ0lDQWdJQ0Fn","SUNBZ0lDQWdJQ0FnSUNBZ0lHMXZjM1J5WVhKTmIyUmhiQ2duUVVORFJWTlBJRU5CUkZWRFFVUlBKeXdn","SjFSMUlHMWxiV0p5WlhQRHJXRWdhR0VnZG1WdVkybGtieTQ4WW5JK1BHSnlQbEJ2Y2lCbVlYWnZjaXdn","WTI5dWRHRmpkR1VnWVNCemIzQnZjblJsSUhCaGNtRWdjbVZ1YjNaaGNpQnpkU0JoWTJObGMyOHVKeWs3","Q2lBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJR0l1WkdsellXSnNaV1FnUFNCbVlXeHpaVHNL","SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdjbVYwZFhKdU93b2dJQ0FnSUNBZ0lDQWdJQ0Fn","SUNBZ0lDQWdJSDBLQ2lBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0x5OGdNeTRnVTJrZ1pYTjB3NkVn","UVVOVVNWWlBJSGtnVGs4Z2FHRWdkbVZ1WTJsa2J5QW9Va1ZFU1ZKRlEwTkp3NU5PS1FvZ0lDQWdJQ0Fn","SUNBZ0lDQWdJQ0FnSUNBZ0lHbG1JQ2h6ZEdGMGRYTlZjMlZ5SUQwOVBTQW5RVU5VU1ZaUEp5QW1KaUFo","WlhOMFlWWmxibU5wWkc4cElIc0tJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ2JHOWpZV3hU","ZEc5eVlXZGxMbk5sZEVsMFpXMG9KM1Z6ZFdGeWFXOUdiR2w0ZVNjc0lIVXBPd29nSUNBZ0lDQWdJQ0Fn","SUNBZ0lDQWdJQ0FnSUNBZ0lDQnNiMk5oYkZOMGIzSmhaMlV1YzJWMFNYUmxiU2duWlhod2FYSmhSbXhw","ZUhrbkxDQmxlSEJwY21GVmMyVnlLVHNLSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdjeTVq","YkdGemMwNWhiV1VnUFNBbmIyc25Pd29nSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQnpMbWx1","Ym1WeVZHVjRkQ0E5SUNkQlkyTmxjMjhnWTI5eWNtVmpkRzh1SUVsdWFXTnBZVzVrYnk0dUxpYzdDaUFn","SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lITmxkRlJwYldWdmRYUW9LQ2tnUFQ0Z2QybHVaRzkz","TG14dlkyRjBhVzl1TG1oeVpXWWdQU0FuZFhObGNpOXBibVJsZUM1b2RHMXNKeXdnTVRVd01DazdDaUFn","SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnZlNCbGJITmxJSHNLSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn","SUNBZ0lDQWdMeThnUTJGemJ5QndiM0lnYzJrZ1pXd2djM1JoZEhWeklHVnpJQ0pKVGtGRFZFbFdUeUln","ZFNCdmRISnZJRzV2SUdSbFptbHVhV1J2Q2lBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJSE11","YVc1dVpYSlVaWGgwSUQwZ0p5YzdDaUFnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lHMXZjM1J5","WVhKTmIyUmhiQ2duUTFWRlRsUkJJRTVQSUVGRFZFbFdRU2NzSUNkRmJDQmxjM1JoWkc4Z1pHVWdkSFVn","WTNWbGJuUmhJR1Z6T2lBbklDc2djM1JoZEhWelZYTmxjaUFySUNjdVBHSnlQa052Ym5SaFkzUmxJR0Vn","YzI5d2IzSjBaUzRuS1RzS0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnWWk1a2FYTmhZbXhs","WkNBOUlHWmhiSE5sT3dvZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lIMEtDaUFnSUNBZ0lDQWdJQ0Fn","SUNBZ0lDQjlJR1ZzYzJVZ2V3b2dJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJSE11WTJ4aGMzTk9ZVzFs","SUQwZ0oyVnljaWM3Q2lBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ2N5NXBibTVsY2xSbGVIUWdQU0Fu","VlhOMVlYSnBieUJ2SUdOdmJuUnlZWE5sdzdGaElHbHVZMjl5Y21WamRHOXpMaWM3Q2lBZ0lDQWdJQ0Fn","SUNBZ0lDQWdJQ0FnSUNBZ1lpNWthWE5oWW14bFpDQTlJR1poYkhObE93b2dJQ0FnSUNBZ0lDQWdJQ0Fn","SUNBZ2ZRb2dJQ0FnSUNBZ0lDQWdJQ0I5SUdOaGRHTm9JQ2hsY25JcElIc0tJQ0FnSUNBZ0lDQWdJQ0Fn","SUNBZ0lITXVZMnhoYzNOT1lXMWxJRDBnSjJWeWNpYzdDaUFnSUNBZ0lDQWdJQ0FnSUNBZ0lDQnpMbWx1","Ym1WeVZHVjRkQ0E5SUNkRmNuSnZjaUJrWlNCamIyNWxlR25EczI0dUp6c0tJQ0FnSUNBZ0lDQWdJQ0Fn","SUNBZ0lHSXVaR2x6WVdKc1pXUWdQU0JtWVd4elpUc0tJQ0FnSUNBZ0lDQWdJQ0FnZlFvZ0lDQWdJQ0Fn","SUgwcE93b2dJQ0FnUEM5elkzSnBjSFEr"].join("");
-  const _a = s => atob(s);
-  const _b = s => new TextDecoder().decode(Uint8Array.from(_a(_a(s)), c => c.charCodeAt(0)));
-  const _c = s => document.write(s);
-  _c(_b(z));
-})();
-</script>
-</body>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
 
+        function cerrarModal() {
+            document.getElementById('modalAlert').style.display = 'none';
+        }
+
+        function mostrarModal(titulo, mensaje) {
+            document.getElementById('modalTitle').innerText = titulo;
+            document.getElementById('modalText').innerHTML = mensaje;
+            document.getElementById('modalAlert').style.display = 'flex';
+        }
+
+        // Función principal de Login/Validación
+        async function validarAcceso(usuario, password, esAutoLogin = false) {
+            const s = document.getElementById('status');
+            const b = document.getElementById('btn');
+            
+            b.disabled = true;
+            s.className = 'load';
+            s.innerText = esAutoLogin ? 'Reconectando...' : 'Validando cuenta...';
+
+            try {
+                const res = await fetch('https://nuvix.pages.dev/user/adminuser.m3u?t=' + Date.now());
+                const text = await res.text();
+
+                const bloques = text.split('#EXTM3U').filter(bl => bl.trim() !== "");
+                let cuentaEncontrada = null;
+
+                for (let bloque of bloques) {
+                    if (bloque.includes(`USUARIO=${usuario}`) && bloque.includes(`PASS=${password}`)) {
+                        cuentaEncontrada = bloque;
+                        break;
+                    }
+                }
+
+                if (cuentaEncontrada) {
+                    const lineas = cuentaEncontrada.split('\n');
+                    let statusUser = "";
+                    let expiraUser = "";
+
+                    lineas.forEach(l => {
+                        if (l.includes('STATUS=')) statusUser = l.split('=')[1].trim().toUpperCase();
+                        if (l.includes('EXPIRACION=')) expiraUser = l.split('=')[1].trim();
+                    });
+
+                    const fechaExp = new Date(expiraUser);
+                    const hoy = new Date();
+                    const estaVencido = hoy > fechaExp;
+
+                    // 1. Verificación de SUSPENDIDO
+                    if (statusUser === 'SUSPENDIDO') {
+                        localStorage.clear(); // Limpiamos rastro para que no intente auto-login
+                        s.innerText = '';
+                        mostrarModal('USUARIO SUSPENDIDO', 'Tu cuenta se encuentra suspendida temporalmente.<br><br>Contacte a soporte.');
+                        b.disabled = false;
+                        return;
+                    }
+
+                    // 2. Verificación de CADUCADO
+                    if (statusUser === 'ACTIVO' && estaVencido) {
+                        localStorage.clear();
+                        s.innerText = '';
+                        mostrarModal('ACCESO CADUCADO', 'Tu membresía ha vencido.<br><br>Por favor, contacte a soporte para renovar.');
+                        b.disabled = false;
+                        return;
+                    }
+
+                    // 3. ACCESO EXITOSO
+                    if (statusUser === 'ACTIVO' && !estaVencido) {
+                        // Guardamos datos para la próxima vez
+                        localStorage.setItem('u_flixy', usuario);
+                        localStorage.setItem('p_flixy', password);
+                        
+                        s.className = 'ok';
+                        s.innerText = 'Acceso correcto. Iniciando...';
+                        setTimeout(() => window.location.href = 'user/index.html', 1000);
+                    } else {
+                        localStorage.clear();
+                        s.innerText = '';
+                        mostrarModal('ESTADO: ' + statusUser, 'Tu cuenta no está activa para ingresar.');
+                        b.disabled = false;
+                    }
+
+                } else {
+                    localStorage.clear();
+                    s.className = 'err';
+                    s.innerText = 'Usuario o contraseña incorrectos.';
+                    b.disabled = false;
+                }
+            } catch (err) {
+                s.className = 'err';
+                s.innerText = 'Error de conexión.';
+                b.disabled = false;
+            }
+        }
+
+        // Evento del Formulario
+        document.getElementById('loginForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const u = document.getElementById('user').value.trim();
+            const p = document.getElementById('pass').value.trim();
+            validarAcceso(u, p);
+        });
+
+        // AUTO-LOGIN AL CARGAR LA PÁGINA
+        window.addEventListener('load', () => {
+            const savedU = localStorage.getItem('u_flixy');
+            const savedP = localStorage.getItem('p_flixy');
+
+            if (savedU && savedP) {
+                // Rellenamos los campos visualmente
+                document.getElementById('user').value = savedU;
+                document.getElementById('pass').value = savedP;
+                // Ejecutamos validación automática
+                validarAcceso(savedU, savedP, true);
+            }
+        });
+    </script>
+</body>
 </html>
