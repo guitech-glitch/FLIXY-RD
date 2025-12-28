@@ -1,25 +1,25 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/e3bf7ef1f38f0a0e9e7be887f7704786.webp" group-title="DEPORTES",COMBTV
-https://aym-cbtv.otteravision.com/aym/cbtv/cbtv_1080p.m3u8
-#EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/cf15acd5c9ebe40d8482881f72a3f10e.webp" group-title="DEPORTES",Tennis Plus
-https://amg01935-amg01935c1-amgplt0020.playout.now3.amagi.tv/ts-us-e2-n2/playlist/amg01935-amg01935c1-amgplt0020/8e75102c-e38c-11f0-b0c9-e6994235f2a8/138/1920x1080_6280560/index.m3u8
-#EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/70ba7ca59223bc09b6d05514f64924ae.webp" group-title="CINE",BOX CINEMA
-https://e46fa4a445464f8a9150fa7d510eb85c.mediatailor.us-west-2.amazonaws.com/v1/manifest/2d2d0d97b0e548f025b2598a69b55bf30337aa0e/npp/dce027e2-3be9-42eb-acad-c118df19e2af/4.m3u8
-#EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/51e560600b65af19f305f491df5d04ac.webp" group-title="CINE",FREE TV CLASICO
-https://amg01024-olympusat-cineclasicoco-lgco-a8u19.amagi.tv/1080p-cc/index.m3u8
-#EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/21e3a56732a5a037eaceb6ef617b7aae.webp" group-title="CINE",MY TIME MOVIE NETWORD
-https://appletree-mytimespain-rakuten.amagi.tv/1080p/index.m3u8
-#EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/11891ee8913e61a918d8a4e559d4e082.webp" group-title="CINE",RUN TIME ACCION
-https://run-ra-es.otteravision.com/run/ra_es/ra_es_720.m3u8
-#EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/4105f4374c811c5e233dddb029e79c0d.webp" group-title="CINE",RUN TIME SERIES Y PELICULAS
-https://run-rt-es.otteravision.com/run/rt_es/rt_es_720p_high.m3u8
-#EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/6cc41b88a015a34ab239fc5e2220ffdf.webp" group-title="DEPORTES",BBC SPORTS
-https://xumo-xumoent-vc-122-sjv70.fast.nbcuni.com/live/master_5.m3u8
-#EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/f2a67a0c02ab0841afbdd8e7623aeae5.webp" group-title="DEPORTES",Motor visión TV
-https://stream.ads.ottera.tv/cl/251228d5887v24cra3j1brm97g/1920x1080_4787201_4_f.m3u8
-#EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/749972439b688b417a9afdac09317cd6.webp" group-title="DEPORTES",TB DUBAI RACING
-https://dmithrvllta.cdn.mgmlcdn.com/dubairacing/smil:dubairacing.smil/chunklist_b1600000.m3u8
-#EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/efea896119450ed5bdc725f270cf31ec.webp" group-title="CINE",Canela Cinema
+#EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/6ee8b5734b4901400532a4a97e6ca03a.webp" group-title="CHILE",CHILEVISION
+http://38.250.127.17:9800/play/a05h/index.m3u8
+#EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/e793cb4dc38511f11aa456db33a7a866.webp" group-title="CINE",FILM RISE
+https://d3rciv7av2te5a.cloudfront.net/v1/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-plex/43dc22cc-fb25-4568-92d2-e15173354d6e/5.m3u8
+#EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/0d8ea456a45f1f4837ffb24db7646f8f.webp" group-title="CINE",TV CINE
+https://stmv1.srvif.com/tvserie/tvserie/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/aab84e3a60f3c340d20f688f4d796069.webp" group-title="DEPORTES",Luchas Plus
+https://amg17334-amg17334c1-plex-us-6729.playouts.now.amagi.tv/ts-us-e2-n2/playlist/amg17334-luchalibrefast-luchalibre-plexus/cb7d3e167b716fdacfcb3f6cd8f141a0d1533081573ad2613bac5e9626c2495382bcf9c1e74ee9395ebd40a33e40340d0136d41cc07c11dfb923f6056b3b5464e4fca27ad9871202a2bf56742cb7710e19f80a0cc0541362d5ec2d0d8716bc6d4a46bb5e200564cdf522d5122fb99c1ad72672debdaa346a2605468f2e05a7ff03f6e0e05946c66cbfb10248854c14b1d30090cb19b887ca5898519274f4409c90f38a810dd7859930b456b33259157a2accd234ca9f09e6839f306ccc7079172c3f8cc3e19e345ccc27113cc232aad56ad21cd480298d6178ee4ec80fcc078365ae06b0f20e8e99fb8e120f69ff846c6829f6b1fbcae36367f426dab2f9d1764b9cf43f715386388b75656bc6bd833facf738bafa6389bd621878e794469092fbc3ccb89f4591208596a0cb731200334a52c66ea39c6cc920922dfb995d720a3f31c7f062cd88dd5127710fd7d02cb33d2ff98adbcd8f7478a0063c55e767d55e7f1cef3c7e73e828b9d77c5b80280e8a222eb93f118551f7ac23e5adb8b4556355bf38ac5dc589d95728b9ea9008c9a1f1fc69d382a470/138/1920x1080_6046040/index.m3u8
+#EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/7d9c740c6bc88f2f8159247311b72a9b.webp" group-title="DEPORTES",RS NEWS SPORTS
+https://video03.logicahost.com.br/rssports4/rssports4/chunklist_w1180585288.m3u8
+#EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/8bbe6817af0af2e0e5a6df96f245b752.webp" group-title="DEPORTES",N SPORTS
+https://ogc-nsprt-tcl-roku-syndication.otteravision.com/ogc/nsprt/nsprt_720p.m3u8
+#EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/47ac07aab03b6b374cf69559675aa648.webp" group-title="GUATEMALA",CARIÑOSA TV
+https://cloud2.streaminglivehd.com:1936/carinosatv/carinosatv/chunklist_w883429976.m3u8
+#EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/bb42115ec41fea4ac36dec93b294d2e2.webp" group-title="CINE",Run Time
+https://run-rt-uh.otteravision.com/run/rt_uh/rt_uh_720.m3u8
+#EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/16f8ed90cfdce23eb93131280ab06426.webp" group-title="CINE",Xtrema Acción
+https://stmv6.voxtvhd.com.br/cineaccion/cineaccion/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/888486b6af657ca96c36ad57c7c7ee10.webp" group-title="CINE",Peli Mex
+https://amg00658-amg00658c95-canelatv-international-6696.playouts.now.amagi.tv/ts-us-e2-n2/playlist/amg00658-canelamediafast-pelimexta-canelatvinternational/cb7d3e167b716fdacfcb3f6cd8f141a0d1533081573ad2613bac5e9626c2495382bcf9c1e74ee9395ebd40a33e40340d0136d41cc07c11dfb923f6056b3b5464e4fca27ad9871202a2bf56742cb7710e19f80a0cc0541362d5ec2d0d8716bc6d4a46bb5e200564cdf522d5122fb99c1ad72672debdaa346a2605468f2e05a7ff03f6e0e05946c66cbfb10248854c14b1d30090cb19b887ca5898519224a546cfc7f488d70dd785996ab456b3325915202d9ad934969f04ef8ec83a6c9a23291e2c3f8cc3e19e345ccc27113cc232aad56ad21cd480298d6178ee4ec80fcc078365ae06b0f20e8e99fb8e120f69ff846c6829f6b1fbcae36367f426dab2f9d1764b9cf43f715386388b75656bc6bd833facf738bafa6389bd621878e794469092fbc3ccb89f4591208596a0cb731200334a52c66ea39c6cc920922dfb995d720a3f31c7f062cd88dd5127710fd7d02cb33d2ff98adbcd8f7478a0063c55e767d55e7f1cef3c7e73e828b9d77c5b80280e8a222eb93f118551f7ac23e5adb8b4526f55bf31a45dc5899af70a74d057ee0c80546575ccbcc9da/144/1920x1080_4403200/index.m3u8
+#EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/efea896119450ed5bdc725f270cf31ec.webp" group-title="CINE",Canela Conema
 https://amg00658-amg00658c8-canelatv-international-7227.playouts.now.amagi.tv/ts-us-e2-n2/playlist/amg00658-canelamediafast-cinemalt-canelatvinternational/cb7d3e167b716fdacfcb3f6cd8f141a0d1533081573ad2613bac5e9626c2495382bcf9c1e74ee9395ebd40a33e40340d0136d41cc07c11dfb923f6056b3b5464e4fca27ad9871202a2bf56742cb7710e19f80a0cc0541362d5ec2d0d8716bc6d4a46bb5e200564cdf522d5122fb99c1ad72672debdaa346a2605468f2e05a7ff03f6e0e05946c66cbfb10248854c14b1d30090cb19b887ca5898519276f41c9f93f982800dd785996ab456b33259152378cb843491cc5cee83c2383b9d202d422c3f8cc3e19e345ccc27113cc232aad56ad21cd480298d6178ee4ec80fcc078365ae06b0f20e8e99fb8e120f69ff846c6829f6b1fbcae36367f426dab2f9d1764b9cf43f715386388b75656bc6bd833facf738bafa6389bd621878e794469092fbc3ccb89f4591208596a0cb731200334a52c66ea39c6cc920922dfb995d720a3f31c7f062cd88dd5127710fd7d02cb33d2ff98adbcd8f7478a0063c55e767d55e7f1cef3c7e73e828b9d77c5b80280e8a222eb93f118551f7ac23e5adb8b4576b55bf46a15dc5899d08b54baaa2615d4e2f208e874ef501/110/1920x1080_6423560/index.m3u8
 #EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/14380b6fcd3d8d72b9a4003e0afd05be.webp" group-title="CINE",Telemundo Acción
 https://d3rciv7av2te5a.cloudfront.net/v1/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-plex/43bd3acd-ebf4-4c8d-a421-e0bedc3c0ea1/4.m3u8
@@ -34,7 +34,7 @@ https://d2mr4fu91mjx9m.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68
 #EXTINF:-1 tvg-logo="" group-title="NOTICIAS",CDN
 http://38.159.227.126:8000/play/a05d/index.m3u8
 #EXTINF:-1 tvg-logo="https://cdndeportes.com.do/wp-content/uploads/2023/11/CDN-Deportes-Logo.png" group-title="DEPORTES",CDN DEPORTES
-http://200.125.170.122:8000/play/a03j/index.m3u8
+https://live.eu-north-1b.cf.dmcdn.net/sec2(12FmZ6yRD9mMinC-vTpuJFTbtUHNjt2Si94aVcg02Pf5OdVHnBTP7ZBwESvnb273OHuIQyditnBZglNg-gqOtkIMytEzyEotoVio6BgkuBRuvLCzqszBlxkCSIt3PYhaPIzOtlp_V9imw-cg6yYoAA)/dm/3/x9lntl6/s/live-480.m3u8
 #EXTINF:-1 tvg-logo="https://cdn.livesoccertv.com/images/channels/thumbnails/abu-dhabi-sports-2.jpg" group-title="PREMIUM",Abu Dhabi Sports 2
 https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv_enc/abudhabi_sports_2/abudhabi_sports_2_hls_nd/index.m3u8
 #EXTINF:-1 tvg-logo="https://scontent-mia3-1.xx.fbcdn.net/v/t39.30808-6/305053195_520537823407140_6701162366202901371_n.png?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGC89YViCL8NqYu9sBEv51pIE0ZlaXS1gsgTRmVpdLWC7q3ybQPATcq6shFo7l7iIc&_nc_ohc=Z_aCkFS3vjcQ7kNvwG2o4TZ&_nc_oc=AdnpVn7P1_ajcsy6Ilkmfsw0LdpSclpeUv3XvQe6rpoz8c4qCD5bMm6NWCRo0hna34A33xsowW0qRXZtSSoLSRL1&_nc_zt=23&_nc_ht=scontent-mia3-1.xx&_nc_gid=D_0uICSvkwC0X_R3Uj4qWQ&oh=00_AfmjpKQyIOiM07duHoYTCRtcGFHckXfW8FVCtyLS3w9RjA&oe=6956153C" group-title="DEPORTES",30A Golf Kingdom
