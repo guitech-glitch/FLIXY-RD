@@ -1,7 +1,7 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/8f667db78acfeca3e792be86616ee96f.webp" group-title="CINE",Cine Friki
-https://d2mr4fu91mjx9m.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-rb0tx75ojbc5u/CineFriki_ES.m3u8
-#EXTINF:-1 tvg-logo="" group-title="NOTICIAS",CDN
+#EXTINF:-1 tvg-logo="https://cdn.livesoccertv.com/images/channels/thumbnails/abu-dhabi-sports-1.png" group-title="DEPORTES",Abu Dhabi Sports 1
+https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv_enc/abudhabi_sports_1/abudhabi_sports_1_hls_nd/index.m3u8
+#EXTINF:-1 tvg-logo="" group-title="PREMIUM",CDN
 http://38.159.227.126:8000/play/a05d/index.m3u8
 #EXTINF:-1 tvg-logo="https://cdndeportes.com.do/wp-content/uploads/2023/11/CDN-Deportes-Logo.png" group-title="DEPORTES",CDN DEPORTES
 http://200.125.170.122:8000/play/a03j/index.m3u8
