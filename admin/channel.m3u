@@ -1,4 +1,8 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="" group-title="PREMIUM",CDN
+http://38.159.227.126:8000/play/a05d/index.m3u8
+#EXTINF:-1 tvg-logo="https://cdndeportes.com.do/wp-content/uploads/2023/11/CDN-Deportes-Logo.png" group-title="DEPORTES",CDN DEPORTES
+http://200.125.170.122:8000/play/a03j/index.m3u8
 #EXTINF:-1 tvg-logo="https://cdn.livesoccertv.com/images/channels/thumbnails/abu-dhabi-sports-2.jpg" group-title="PREMIUM",Abu Dhabi Sports 2
 https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv_enc/abudhabi_sports_2/abudhabi_sports_2_hls_nd/index.m3u8
 #EXTINF:-1 tvg-logo="https://scontent-mia3-1.xx.fbcdn.net/v/t39.30808-6/305053195_520537823407140_6701162366202901371_n.png?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGC89YViCL8NqYu9sBEv51pIE0ZlaXS1gsgTRmVpdLWC7q3ybQPATcq6shFo7l7iIc&_nc_ohc=Z_aCkFS3vjcQ7kNvwG2o4TZ&_nc_oc=AdnpVn7P1_ajcsy6Ilkmfsw0LdpSclpeUv3XvQe6rpoz8c4qCD5bMm6NWCRo0hna34A33xsowW0qRXZtSSoLSRL1&_nc_zt=23&_nc_ht=scontent-mia3-1.xx&_nc_gid=D_0uICSvkwC0X_R3Uj4qWQ&oh=00_AfmjpKQyIOiM07duHoYTCRtcGFHckXfW8FVCtyLS3w9RjA&oe=6956153C" group-title="DEPORTES",30A Golf Kingdom
