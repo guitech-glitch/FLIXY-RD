@@ -1,10 +1,10 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/466deabbd42d619f75a9134701c3e39b.webp" group-title="MUSICA",Retro Plus
-https://scl.edge.grupoz.cl/retroplustvuno/live/chunklist_w1050394044.m3u8
-#EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/3a49e44efce01bea59de8af9e253695f.webp" group-title="DEPORTES",Canela Deported
-https://amg00658-amg00658c10-canelatv-international-7279.playouts.now.amagi.tv/ts-us-e2-n2/playlist/amg00658-canelamediafast-deporteslt-canelatvinternational/cb7d3e167b716fdacfcb3f6cd8f141a0d1533081573ad2613bac5e9626c2495382bcf9c1e74ee9395ebd40a33e40340d0136d41cc07c11dfb923f6056b3b5464e4fca27ad9871202a2bf56742cb7710e19f80a0cc0541362d5ec2d0d8716bc6d4a46bb5e200564cdf522d5122fb99c1ad72672debdaa346a2605468f2e05a7ff03f6e0e05946c66cbfb10248854c14b1d30090cb19b887ca5898519223a31c9fc4f289850dd7859964b456b3325915232ac9d434c69b5ee5d8c26a6e9a727e422c3f8cc3e19e345ccc27113cc232aad56ad21cd480298d6178ee4ec80fcc078365ae06b0f20e8e99fb8e120f69ff846c6829f6b1fbcae36367f426dab2f9d1764b9cf43f715386388b75656bc6bd833facf738bafa6389bd621878e794469092fbc3ccb89f4591208596a0cb731200334a52c66ea39c6cc920922dfb995d720a3f31c7f062cd88dd5127710fd7d02cb33d2ff98adbcd8f7478a0063c55e767d55e7f1cef3c7e73e828b9d77c5b80280e8a222eb93f118551f7ac23e5adb9bc51dbd43927e05509c56a0899aa2f04a603d385d820105c0c/97/1920x1080_6423560/index.m3u8
-#EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/473dc750652d9ae1930de51f914033d7.webp" group-title="DEPORTES",MLB Network En Vivo
-https://d1yqxv6gx128ca.cloudfront.net/v1/manifest/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-mmpgjr4zitcp0/97642aa7-1341-4136-9154-a2f056aa430e/0.m3u8
+#EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/14380b6fcd3d8d72b9a4003e0afd05be.webp" group-title="CINE",Telemundo Acción 
+https://d3rciv7av2te5a.cloudfront.net/v1/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-plex/43bd3acd-ebf4-4c8d-a421-e0bedc3c0ea1/4.m3u8
+#EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/c871bb969e8076f811e7f7522ba7e545.webp" group-title="DEPORTES",Real Madrid TV
+https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/bitrate_3.m3u8
+#EXTINF:-1 tvg-logo="" group-title="NOVELAS",Telenovelas
+https://dtsszjrztq9ti.cloudfront.net/v1/manifest/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-yshah5p4v45g1/9fd2d16c-a1c1-47a6-bf0f-eef5e5a1544e/3.m3u8
 #EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/2ecbfa8a3f25cc1212dbcd975383b55a.webp" group-title="DEPORTES",Azteca Deportrs
 https://azt-mun.otteravision.com/azt/mun/mun_720p_high.m3u8
 #EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/8f667db78acfeca3e792be86616ee96f.webp" group-title="CINE",Cine Friki
