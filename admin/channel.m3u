@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2a-TfkSOtv2NTZY7vUjeoi4BqIkjqpS4cftZSnhBs90Zs06wXXr9zCdDx&s=10" group-title="MEXICO",Azteca Siete
+https://dai.google.com/linear/hls/event/YHoOj51dSKCvBQOBG2OvLQ/master.m3u8
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMSj9EfePi33ZdBjQReCH0s0gO7FyHeMhTo5shp1hbSxbVaZM4rWUWO2U&s=10" group-title="NOVELAS",SONY NOVELAS
 https://a89829b8dca2471ab52ea9a57bc28a35.mediatailor.us-east-1.amazonaws.com/v1/master/0fb304b2320b25f067414d481a779b77db81760d/CanelaTV_SonyCanalNovelas/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/64f6163a30ab3300083d870e/colorLogoPNG.png" group-title="DEPORTES",MMA
