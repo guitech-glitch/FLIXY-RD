@@ -1,6 +1,6 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/473dc750652d9ae1930de51f914033d7.webp" group-title="DEPORTES",MLB Network En Vivo
-https://d1yqxv6gx128ca.cloudfront.net/v1/manifest/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-mmpgjr4zitcp0/97642aa7-1341-4136-9154-a2f056aa430e/0.m3u8
+#EXTINF:-1 tvg-logo="" group-title="NOVELAS",Telenovelas
+https://dtsszjrztq9ti.cloudfront.net/v1/manifest/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-yshah5p4v45g1/9fd2d16c-a1c1-47a6-bf0f-eef5e5a1544e/3.m3u8
 #EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/2ecbfa8a3f25cc1212dbcd975383b55a.webp" group-title="DEPORTES",Azteca Deportrs
 https://azt-mun.otteravision.com/azt/mun/mun_720p_high.m3u8
 #EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/8f667db78acfeca3e792be86616ee96f.webp" group-title="CINE",Cine Friki
