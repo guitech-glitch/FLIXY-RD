@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/6d/Canal_de_las_Estrellas_2013.png/revision/latest?cb=20200305231311&path-prefix=es" group-title="MEXICO",Canal de Las Estrellas
+https://channel01-onlymex.akamaized.net/hls/live/2022749/event01/index.m3u8
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2a-TfkSOtv2NTZY7vUjeoi4BqIkjqpS4cftZSnhBs90Zs06wXXr9zCdDx&s=10" group-title="MEXICO",Azteca Siete
 https://dai.google.com/linear/hls/event/YHoOj51dSKCvBQOBG2OvLQ/master.m3u8
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMSj9EfePi33ZdBjQReCH0s0gO7FyHeMhTo5shp1hbSxbVaZM4rWUWO2U&s=10" group-title="NOVELAS",SONY NOVELAS
