@@ -1,12 +1,12 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://tvhigueydigital.com/wp-content/uploads/2022/04/tvh-768x576.jpg" group-title="REP. DOMINICANA",TV HIGUEY
-https://vdo1.streamgato.us:3046/live/tvhigueycanal12live.m3u8
-#EXTINF:-1 tvg-logo="" group-title="CUBA",Prensa Latina TV
-https://eu1.servers10.com:8081/8192/index.m3u8
-#EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/e133cc3ad3fe7dd93c09b15991712506.webp" group-title="PUERTO RICO",WPR TV
-https://streamwipr.pr/hls/stream/1_2/index.m3u8
-#EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/d21e50c3e47fa5a4994ba577192c22c2.webp" group-title="REP. DOMINICANA",TELESISTEMA
-https://live2.eu-north-1b.cf.dmcdn.net/sec2(02EMIMkNUBz531stolNAVfZiT4OotlNrksUwkbC8Km_bac7hS_siglCLxrIRRTW3evJ5lkSW5xyrN0zHPmzJuLaAG3ZtI2D9ICfQSMjodhs-yEm1CQT-aJBLYQXF0MLP)/cloud/3/x80ac48/d/live-480.m3u8
+#EXTINF:-1 tvg-logo="https://teleradionorte.com/wp-content/themes/tailpress/resources/img/logo.png" group-title="REP. DOMINICANA",TELE RADIO NORTE
+https://angelistic.live:3785/live/tvoficiallive.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/8d/Radio-TV-Mart%C3%AD-Logo.svg" group-title="CUBA",Radio y TV Marti
+https://ocb-ingest.akamaized.net/hls/live/2037032/tvmc01/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/c1a66d2a8875494eeca6a47a9f64a8d8.webp" group-title="VENEZUELA",Canal Once
+https://tv.streamcasthd.com:3676/live/canal11delzulialive.m3u8
+#EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/8c946ae92a720ec528070cc58dcaa5a7.webp" group-title="RELIGION",CDM INTERNACIONAL
+https://627bb251f23c7.streamlock.net:444/CDMInternacional/CDMInternacional/chunklist_w794638073.m3u8
 #EXTINF:-1 tvg-logo="https://tvonline.com.do/wp-content/uploads/2021/06/Canal-4-rd-en-vivo-y-directo-1533x1536.png" group-title="REP. DOMINICANA",Canal 4 RTVD
 https://protvradiostream.com:1936/canal4rd-1/ngrp:canal4rd-1_all/chunklist_w2034728270_b3747840.m3u8
 #EXTINF:-1 tvg-logo="https://scontent-mia3-3.xx.fbcdn.net/v/t39.30808-6/464090113_1053063653457261_8939160624460249626_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEla4Rl77i1Zpm2pe5AKxYoLGu0OHnqMEAsa7Q4eeowQGg8Q7hu-YQcotppgmSe5V4&_nc_ohc=DJji_346du8Q7kNvwHKEh4j&_nc_oc=AdmjgkTTPKiB-sEj9K9dD3I7ktZEbtXWgQ3Fvb4diXKhyW4ZfUkyYnFHVHVoWBYG8Y2sCPz6ubYqQ8Qn5kN0IdRU&_nc_zt=23&_nc_ht=scontent-mia3-3.xx&_nc_gid=_2Ox58vtQqz02TQtg0X9Zw&oh=00_AfmH0CCjO__jwPGWXGuI5ZF172zWwo2ogp6_Qx4pv8s-kw&oe=69564A95" group-title="REP. DOMINICANA",Romana TV
