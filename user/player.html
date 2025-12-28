@@ -13,6 +13,7 @@
             --active-bg: linear-gradient(90deg, rgba(0, 76, 255, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
             --text-main: #ffffff;
             --text-dim: #b3b3b3;
+            --error: #ff3333;
         }
 
         body { 
@@ -53,13 +54,12 @@
         }
         .sidebar.active { left: 0; }
 
-        /* Header en Blanco con contador */
         .sidebar-header { 
             padding: 25px 20px 15px; 
             font-size: 1.3rem; 
             letter-spacing: 1px;
             font-weight: 800; 
-            color: #ffffff; /* Color Blanco */
+            color: #ffffff; 
             text-transform: uppercase;
             border-bottom: 1px solid rgba(255,255,255,0.1);
             display: flex;
@@ -132,7 +132,7 @@
             border-left: 4px solid var(--accent);
         }
 
-        /* Información Superior Derecha con Efecto Vidrio */
+        /* Información Superior Derecha */
         #channel-info-overlay { 
             position: absolute; 
             top: 30px; 
@@ -158,11 +158,64 @@
         #ov-num { font-size: 3rem; font-weight: 900; line-height: 1; }
         #ov-name { font-size: 1.4rem; font-weight: bold; text-align: right; }
         #ov-logo { height: 50px; max-width: 90px; object-fit: contain; }
+
+        /* Modal Parental */
+        #parental-modal {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.85);
+            backdrop-filter: blur(25px);
+            z-index: 9999;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .pin-box {
+            background: rgba(255,255,255,0.08);
+            padding: 40px;
+            border-radius: 25px;
+            border: 1px solid rgba(255,255,255,0.2);
+            text-align: center;
+            box-shadow: 0 10px 50px rgba(0,0,0,0.5);
+        }
+        .pin-box h2 { margin-bottom: 20px; font-weight: 800; letter-spacing: 2px; }
+        .pin-input {
+            background: rgba(0,0,0,0.5);
+            border: 2px solid var(--accent);
+            color: white;
+            font-size: 2.5rem;
+            width: 180px;
+            text-align: center;
+            border-radius: 12px;
+            padding: 12px;
+            letter-spacing: 8px;
+            outline: none;
+            margin-bottom: 10px;
+        }
+        .pin-hint { margin-top: 15px; color: var(--text-dim); font-size: 0.9rem; }
+        #pin-error { 
+            color: var(--error); 
+            font-weight: bold; 
+            margin-top: 10px; 
+            font-size: 1rem;
+            visibility: hidden; 
+        }
     </style>
 </head>
 <body>
 
     <div class="video-container">
+        <div id="parental-modal">
+            <div class="pin-box">
+                <h2>CONTENIDO ADULTO</h2>
+                <p>Ingrese el PIN de seguridad</p>
+                <input type="password" id="pin-input" class="pin-input" maxlength="4" placeholder="****">
+                <div class="pin-hint">Presione ENTER para confirmar</div>
+                <div id="pin-error">CÓDIGO INCORRECTO</div>
+            </div>
+        </div>
+
         <div class="sidebar" id="sidebar">
             <div class="sidebar-header">
                 <span>Canales</span>
@@ -183,6 +236,7 @@
     <script src="https://vjs.zencdn.net/8.3.0/video.min.js"></script>
     <script>
         const M3U_URL = 'https://flixy-rd.pages.dev/admin/channel.m3u';
+        const PARENTAL_PIN = "1881";
         const player = videojs('tv-player', { 
             fill: true,
             controls: false, 
@@ -192,8 +246,8 @@
 
         let allChannels = [], currentIndex = 0, sideFocusIndex = 0, currentSection = "PLAYER";
         let sidebarTimer = null; 
+        let pendingChannelIdx = null;
         
-        // Mapeo extendido para asegurar compatibilidad con la mayoría de controles de TV
         const TV_KEYS = { 
             UP: [38, 19, 104], 
             DOWN: [40, 20, 98], 
@@ -218,10 +272,20 @@
             allChannels = [];
             for (let i = 0; i < lines.length; i++) {
                 if (lines[i].includes('#EXTINF')) {
-                    const name = lines[i].split(',')[1]?.trim();
-                    const logo = lines[i].match(/tvg-logo="([^"]+)"/)?.[1] || "";
+                    const info = lines[i];
+                    const name = info.split(',')[1]?.trim();
+                    const logo = info.match(/tvg-logo="([^"]+)"/)?.[1] || "";
+                    const group = info.match(/group-title="([^"]+)"/)?.[1] || "";
                     const url = lines[i+1]?.trim();
-                    if (url && url.startsWith('http')) allChannels.push({ name, logo, url });
+                    
+                    if (url && url.startsWith('http')) {
+                        allChannels.push({ 
+                            name, 
+                            logo, 
+                            url, 
+                            isAdult: group.toUpperCase().includes("ADULTO") || name.toUpperCase().includes("XXX")
+                        });
+                    }
                 }
             }
             document.getElementById('header-count').innerText = allChannels.length;
@@ -238,7 +302,7 @@
                 d.innerHTML = `
                     <small>${(i + 1).toString().padStart(2, '0')}</small>
                     <img src="${ch.logo}" onerror="this.src='https://via.placeholder.com/50x35?text=TV'">
-                    <span>${ch.name}</span>
+                    <span>${ch.isAdult ? '🔒 ' + ch.name : ch.name}</span>
                 `;
                 d.onclick = () => {
                     sideFocusIndex = i;
@@ -251,17 +315,65 @@
 
         function loadChannel(idx) {
             if (idx < 0 || idx >= allChannels.length) return;
+            const ch = allChannels[idx];
+            
+            // Si hay un canal adulto, abrimos modal
+            if (ch.isAdult) {
+                pendingChannelIdx = idx;
+                openParentalModal();
+                // Actualizamos overlay visual aunque no reproduzca aún
+                updateOverlayVisuals(idx);
+                return;
+            }
+            executeLoad(idx);
+        }
+
+        function updateOverlayVisuals(idx) {
+            const ch = allChannels[idx];
+            document.getElementById('ov-num').innerText = (idx + 1).toString().padStart(2, '0');
+            document.getElementById('ov-logo').src = ch.logo;
+            document.getElementById('ov-name').innerText = ch.isAdult ? '🔒 ' + ch.name : ch.name;
+            showOverlay();
+        }
+
+        function executeLoad(idx) {
             currentIndex = idx;
             const ch = allChannels[idx];
             player.src({ src: ch.url, type: 'application/x-mpegURL' });
-            player.play().catch(e => console.log("Auto-play blocked o error"));
-
-            document.getElementById('ov-num').innerText = (idx + 1).toString().padStart(2, '0');
-            document.getElementById('ov-logo').src = ch.logo;
-            document.getElementById('ov-name').innerText = ch.name;
-            showOverlay();
+            player.play().catch(e => console.log("Auto-play blocked"));
+            updateOverlayVisuals(idx);
             updateSidebarFocus();
             if (currentSection === "SIDEBAR") resetSidebarTimer();
+        }
+
+        function openParentalModal() {
+            currentSection = "MODAL";
+            const modal = document.getElementById('parental-modal');
+            const input = document.getElementById('pin-input');
+            const errorMsg = document.getElementById('pin-error');
+            errorMsg.style.visibility = 'hidden'; 
+            modal.style.display = 'flex';
+            input.value = '';
+            input.focus();
+        }
+
+        function closeParentalModal() {
+            document.getElementById('parental-modal').style.display = 'none';
+            currentSection = "PLAYER";
+            pendingChannelIdx = null;
+        }
+
+        function checkPin() {
+            const val = document.getElementById('pin-input').value;
+            const errorMsg = document.getElementById('pin-error');
+            if (val === PARENTAL_PIN) {
+                const targetIdx = pendingChannelIdx;
+                closeParentalModal();
+                executeLoad(targetIdx);
+            } else {
+                errorMsg.style.visibility = 'visible'; 
+                document.getElementById('pin-input').value = '';
+            }
         }
 
         function showOverlay() {
@@ -302,49 +414,49 @@
             }
         }
 
-        // Event Listener para capturar teclas del control remoto
         window.addEventListener('keydown', (e) => {
             const key = e.keyCode || e.which;
             
-            // Si el sidebar está abierto, reiniciamos el tiempo de espera
+            // LÓGICA ESPECIAL PARA EL MODAL
+            if (currentSection === "MODAL") {
+                // Si presiona ARRIBA o ABAJO mientras está el modal, cambiamos de canal y cerramos modal
+                if (TV_KEYS.UP.includes(key) || TV_KEYS.DOWN.includes(key)) {
+                    e.preventDefault();
+                    const dir = TV_KEYS.UP.includes(key) ? -1 : 1;
+                    const nextIdx = (pendingChannelIdx + dir + allChannels.length) % allChannels.length;
+                    closeParentalModal();
+                    loadChannel(nextIdx);
+                    return;
+                }
+                if (TV_KEYS.ENTER.includes(key)) checkPin();
+                if (TV_KEYS.BACK.includes(key)) closeParentalModal();
+                return;
+            }
+
             if (currentSection === "SIDEBAR") resetSidebarTimer();
 
-            // Botón REGRESAR / BACK
             if (TV_KEYS.BACK.includes(key)) {
                 e.preventDefault();
-                if (currentSection === "SIDEBAR") {
-                    closeSidebar();
-                } else {
-                    window.history.back();
-                }
+                if (currentSection === "SIDEBAR") closeSidebar();
+                else window.history.back();
             } 
-            // Botones ARRIBA / ABAJO
             else if (TV_KEYS.UP.includes(key) || TV_KEYS.DOWN.includes(key)) {
                 e.preventDefault();
                 const dir = TV_KEYS.UP.includes(key) ? -1 : 1;
-                
                 if (currentSection === "SIDEBAR") { 
-                    // Navegamos por la lista visualmente
                     sideFocusIndex = (sideFocusIndex + dir + allChannels.length) % allChannels.length; 
                     updateSidebarFocus(); 
                 } else { 
-                    // Cambiamos de canal directamente (Zapping)
                     loadChannel((currentIndex + dir + allChannels.length) % allChannels.length); 
                 }
             } 
-            // Botón ENTER / OK
             else if (TV_KEYS.ENTER.includes(key)) {
-                if (currentSection === "SIDEBAR") {
-                    loadChannel(sideFocusIndex);
-                } else {
-                    openSidebar();
-                }
+                if (currentSection === "SIDEBAR") loadChannel(sideFocusIndex);
+                else openSidebar();
             } 
-            // Botón DERECHA (Opcional para abrir sidebar)
             else if (TV_KEYS.RIGHT.includes(key) && currentSection === "PLAYER") {
                 openSidebar();
             }
-            // Botón IZQUIERDA (Opcional para cerrar sidebar)
             else if (TV_KEYS.LEFT.includes(key) && currentSection === "SIDEBAR") {
                 closeSidebar();
             }
