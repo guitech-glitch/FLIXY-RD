@@ -277,7 +277,7 @@ http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/64
 https://vdo.aiontelevision.com:3735/live/aiontelevisionlive.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/G7zIVB7.png" group-title="PREMIUM",AGENDA 56 TV
 https://cloudflare.streamgato.us:3148/live/agenda56tvlive.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/uU01KHz.png" group-title="PREMIUM",ADORAM TV
+#EXTINF:-1 tvg-logo="https://i.imgur.com/uU01KHz.png" group-title="REP. DOMINICANA",ADORAM TV
 https://live20.bozztv.com/giatv/giatv-adoram/adoram/chunks.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/0fWQS53.png" group-title="REP. DOMINICANA",NUEVA VISION
 https://live20.bozztv.com/akamaissh101/ssh101/nuevavisionhd/playlist.m3u8
