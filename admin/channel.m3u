@@ -299,7 +299,7 @@ http://38.159.227.126:8000/play/a05d/index.m3u8
 https://live20.bozztv.com/akamaissh101/ssh101/codificador7/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/4uV90gw.png" group-title="REP. DOMINICANA",CONSTANZA TV
 https://live20.bozztv.com/akamaissh101/ssh101/ctv8hd/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/DHyRWc0.png" group-title="PREMIUM",TV MONTAÑA
+#EXTINF:-1 tvg-logo="https://i.imgur.com/DHyRWc0.png" group-title="REP. DOMINICANA",TV MONTAÑA
 https://live20.bozztv.com/akamaissh101/ssh101/tvmontanahd/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/puOrL7B.jpg" group-title="REP. DOMINICANA",MULTIVISION
 https://5790d294af2dc.streamlock.net/MULTIVISIONRD/MULTIVISIONRD/playlist.m3u8
