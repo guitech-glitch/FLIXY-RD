@@ -3,7 +3,7 @@
 http://38.250.127.17:9800/play/a05h/index.m3u8
 #EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/e793cb4dc38511f11aa456db33a7a866.webp" group-title="CINE",FILM RISE
 https://d3rciv7av2te5a.cloudfront.net/v1/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-plex/43dc22cc-fb25-4568-92d2-e15173354d6e/5.m3u8
-#EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/0d8ea456a45f1f4837ffb24db7646f8f.webp" group-title="CINE",TV CINE
+#EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/0d8ea456a45f1f4837ffb24db7646f8f.webp" group-title="CINE",TV CINE - BRASIL
 https://stmv1.srvif.com/tvserie/tvserie/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/aab84e3a60f3c340d20f688f4d796069.webp" group-title="DEPORTES",Luchas Plus
 https://amg17334-amg17334c1-plex-us-6729.playouts.now.amagi.tv/ts-us-e2-n2/playlist/amg17334-luchalibrefast-luchalibre-plexus/cb7d3e167b716fdacfcb3f6cd8f141a0d1533081573ad2613bac5e9626c2495382bcf9c1e74ee9395ebd40a33e40340d0136d41cc07c11dfb923f6056b3b5464e4fca27ad9871202a2bf56742cb7710e19f80a0cc0541362d5ec2d0d8716bc6d4a46bb5e200564cdf522d5122fb99c1ad72672debdaa346a2605468f2e05a7ff03f6e0e05946c66cbfb10248854c14b1d30090cb19b887ca5898519274f4409c90f38a810dd7859930b456b33259157a2accd234ca9f09e6839f306ccc7079172c3f8cc3e19e345ccc27113cc232aad56ad21cd480298d6178ee4ec80fcc078365ae06b0f20e8e99fb8e120f69ff846c6829f6b1fbcae36367f426dab2f9d1764b9cf43f715386388b75656bc6bd833facf738bafa6389bd621878e794469092fbc3ccb89f4591208596a0cb731200334a52c66ea39c6cc920922dfb995d720a3f31c7f062cd88dd5127710fd7d02cb33d2ff98adbcd8f7478a0063c55e767d55e7f1cef3c7e73e828b9d77c5b80280e8a222eb93f118551f7ac23e5adb8b4556355bf38ac5dc589d95728b9ea9008c9a1f1fc69d382a470/138/1920x1080_6046040/index.m3u8
