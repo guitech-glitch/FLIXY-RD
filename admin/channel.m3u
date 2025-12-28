@@ -1,6 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="a" group-title="PREMIUM",a
-a
 #EXTINF:-1 tvg-logo="https://assets.striiiipst.com/assets/icons/headerlogo_mycamtv.com.png?v=4d141388" group-title="OTROS",MYCAMTV - SQUIRT
 https://live.mycamtv.com/squirt.m3u8
 #EXTINF:-1 tvg-logo="https://assets.striiiipst.com/assets/icons/headerlogo_mycamtv.com.png?v=4d141388" group-title="OTROS",MYCAMTV - INFIELES
