@@ -287,7 +287,7 @@ https://cloud6.livescast.com:3797/live/vegatevelive.m3u8
 https://ds.tvabierta.net/memfs/b295f254-7af9-45e4-bfc6-7e0bba41929d.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/QWR9SOH.png" group-title="PREMIUM",ATABAL TV
 https://vdopanel.jlahozconsulting.com:3648/live/atabaltvlive.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/PBgQi9a.png" group-title="PREMIUM",GUAYMATE TV
+#EXTINF:-1 tvg-logo="https://i.imgur.com/PBgQi9a.png" group-title="REP. DOMINICANA",GUAYMATE TV
 https://live20.bozztv.com/akamaissh101/ssh101/guaymatetv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/352jxnd.png" group-title="REP. DOMINICANA",VEGA VISION CANAL 18
 https://rdn.essastream.com:3400/live/canal18hdlive.m3u8
