@@ -1,6 +1,6 @@
 #EXTM3U
 #EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/64f6163a30ab3300083d870e/colorLogoPNG.png" group-title="DEPORTES",MMA
-https://stitcher.pluto.tv/stitch/hls/channel/64f6163a30ab3300083d870elivestitch/master.m3u8
+https://stitcher.pluto.tv/stitch/hls/channel/64f6163a30ab3300083d870e/master.m3u8?deviceType=web&servertSideAds=false&deviceMake=safari&deviceVersion=1&deviceId=spencer&appVersion=1&deviceDNT=0&deviceModel=web&sid=5c994790-62bc-11ef-843f-be5cd951c95a
 #EXTINF:-1 tvg-logo="https://pbs.twimg.com/profile_images/1156682597298311173/OrfORVXM.jpg" group-title="VENEZUELA",Canal Oasis
 https://live20.bozztv.com/akamaissh101/ssh101/oasistv123/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://assets.striiiipst.com/assets/icons/headerlogo_mycamtv.com.png?v=4d141388" group-title="ADULTOS",MYCAMTV - SQUIRT
