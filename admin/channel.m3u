@@ -241,7 +241,7 @@ https://streamunoapp.com:3057/live/clarovisiontvlive.m3u8
 https://s.emisoras.tv:8081/atv/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/mJN2XNm.png" group-title="REP. DOMINICANA",Cinevision Canal 19
 https://cdn.mycloudstream.io/hls/live/broadcast/etyetihk/index.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/iHjdckl.png" group-title="PREMIUM",Cibaeña TV
+#EXTINF:-1 tvg-logo="https://i.imgur.com/iHjdckl.png" group-title="REP. DOMINICANA",Cibaeña TV
 https://streamunoapp.com:3958/live/cibaenatvlive.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/ShPaOvn.jpg" group-title="PREMIUM",Cenovision HD
 https://5790d294af2dc.streamlock.net/cenovision/cenovision/playlist.m3u8
