@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://cdn.livesoccertv.com/images/channels/thumbnails/abu-dhabi-sports-1.png" group-title="DEPORTES",Abu Dhabi Sports 1
+https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv_enc/abudhabi_sports_1/abudhabi_sports_1_hls_nd/index.m3u8
 #EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/6ee8b5734b4901400532a4a97e6ca03a.webp" group-title="CHILE",CHILEVISION
 http://38.250.127.17:9800/play/a05h/index.m3u8
 #EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/e793cb4dc38511f11aa456db33a7a866.webp" group-title="CINE",FILM RISE
