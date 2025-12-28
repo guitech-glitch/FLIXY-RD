@@ -1,6 +1,6 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://i.imgur.com/kNYY78z.png" group-title="ADULTOS",XXXCartoons.de
-http://144.76.58.245:2307/cartoon/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/avtSqUu.png" group-title="ADULTOS",VISIT X
+https://stream.visit-x.tv/vxtv/live/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/cqKFF8A.png" group-title="ADULTOS",Mycamtv - ASIAN
 https://cdn.adultiptv.net/asian.m3u8
 #EXTINF:-1 tvg-logo="" group-title="ADULTOS",Mycamtv
