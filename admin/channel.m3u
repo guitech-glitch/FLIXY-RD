@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://i.imgur.com/k8jxt12.png" group-title="REP. DOMINICANA",Canal TV
+https://stream.hostuis.com:19360/canatvdigital/canatvdigital.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/79sX78u.png" group-title="COLOMBIA",ATN TV
 https://streaming5.globalhostla.com/rtplive/atntelevision/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/WIPR_2015_blue.svg/250px-WIPR_2015_blue.svg.png" group-title="PUERTO RICO",WIPR-TV CANAL 6
