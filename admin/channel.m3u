@@ -273,7 +273,7 @@ https://ss2.tvrdomi.com:1936/cascaratv/cascaratv/playlist.m3u8
 https://canalda.rgradio.net:3084/live/canaldalive.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/gK0M1jB.png" group-title="REP. DOMINICANA",Canal del Sol
 https://5790d294af2dc.streamlock.net/sol65/sol65/playlist.m3u8
-#EXTINF:-1 tvg-logo="" group-title="EE.UU",Canal América TV
+#EXTINF:-1 tvg-logo="" group-title="EE.UU LATINO",Canal América TV
 http://newyorkstream.ddns.net:5854/enlacecanalamerica/encoderRD/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/HcLs5eM.png" group-title="REP. DOMINICANA",Canal 56
 https://vdopanel.jlahozconsulting.com/p/3124/hybrid/play.m3u8
