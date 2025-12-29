@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://i.ibb.co/2YvKhjW4/Quisqueya-17-AZUL.png" group-title="REP. DOMINICANA",Canal 17 RTVD
+https://protvradiostream.com:1936/rtvd17/ngrp:rtvd17_all/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/k8jxt12.png" group-title="REP. DOMINICANA",Cana TV
 https://stream.hostuis.com:19360/canatvdigital/canatvdigital.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/79sX78u.png" group-title="COLOMBIA",ATN TV
