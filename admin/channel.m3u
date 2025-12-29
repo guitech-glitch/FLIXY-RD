@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://i.imgur.com/79sX78u.png" group-title="COLOMBIA",ATN TV
+https://streaming5.globalhostla.com/rtplive/atntelevision/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/WIPR_2015_blue.svg/250px-WIPR_2015_blue.svg.png" group-title="PUERTO RICO",WIPR-TV CANAL 6
 https://streamwipr.pr/hls/stream/1_2/index.m3u8?tkn=1821384052
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/4/40/WUNO-AM_logo.png" group-title="PUERTO RICO",Noti UNO
