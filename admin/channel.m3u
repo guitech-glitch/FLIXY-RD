@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://www-storage.13.cl/default/logos/logos-13.svg" group-title="CHILE",13 Humor
+https://origin.dpsgo.com/ssai/event/cKWySXKgSK-SzlJmESkOWw/master.m3u8
 #EXTINF:-1 tvg-logo="https://www-storage.13.cl/default/logos/logos-13.svg" group-title="CHILE",13 Festival
 https://origin.dpsgo.com/ssai/event/Nftd0fM2SXasfDlRphvUsg/master.m3u8
 #EXTINF:-1 tvg-logo="https://www-storage.13.cl/default/logos/logos-13.svg" group-title="CHILE",13 C
