@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="" group-title="REP. DOMINICANA",ACTIVA TV
+#EXTINF:-1 tvg-logo="https://i.imgur.com/S69lDu4.png" group-title="HONDURAS",ACTIVA TV
 https://streamtv.mediasector.es/hls/activatv/index.m3u8
 #EXTINF:-1 tvg-logo="https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-6/309395531_772402477416259_89114209607648409_n.png?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHzYl2hlJ8B9wTtRzxdd1Hv7ZFCs69G5bPtkUKzr0bls-3hkS2Oti42xIU0qfq1tN4&_nc_ohc=UOIslKr1usYQ7kNvwEYLKvg&_nc_oc=AdmMGaPQgAzqd1C9JqPZ8faH6UQCcd1bEWgd1nbJ7KDt7QIL7F1fG8WMbKCxEe3Se7Ua_1drQSdXiX6B44a21irM&_nc_zt=23&_nc_ht=scontent-mia3-2.xx&_nc_gid=M9qqZKRInwS7J-LEB_yqrg&oh=00_AfqOjISB9eB6bK8k8xEZUqh8tjgmwjtXeFMBR81osW2ttQ&oe=695DC53F" group-title="RELIGION",A&R CANAL ADVENTISTA
 http://51.222.9.192:3589/stream/play.m3u8
