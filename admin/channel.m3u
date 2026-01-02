@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://www-storage.13.cl/default/logos/logos-13.svg" group-title="CHILE",13 Realities
+https://origin.dpsgo.com/ssai/event/g7_JOM0ORki9SR5RKHe-Kw/master.m3u8
 #EXTINF:-1 tvg-logo="https://www-storage.13.cl/default/logos/logos-13.svg" group-title="PREMIUM",13 TELESERIES
 https://origin.dpsgo.com/ssai/event/f4TrySe8SoiGF8Lu3EIq1g/master.m3u8
 #EXTINF:-1 tvg-logo="https://canaltrece.com.co/wp-content/uploads/2024/03/logo-trece-blanco.png" group-title="COLOMBIA",TRECE
