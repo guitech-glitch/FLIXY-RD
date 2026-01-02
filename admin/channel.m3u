@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://8lamarinatv.com/wp-content/uploads/2018/05/8lamarinatv.png" group-title="ARGENTINA",8 La Marina Tv
+https://streaming005.gestec-video.com/hls/canal24.m3u8
 #EXTINF:-1 tvg-logo="https://7televalencia.com/wp-content/uploads/2025/02/Logo-7-televalencia-Naranja-letras-negras-y-naranja_356x86.png" group-title="ESPAÑA",7 TeleValencia
 https://play.cdn.enetres.net/9E9557EFCEBB43A89CEC8FBD3C500247022/028/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://scontent-mia3-3.xx.fbcdn.net/v/t39.30808-6/515315386_1364330918599391_6962263340833066632_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHkpIcU35tazglLSz-xRzqJFITq7oSL_tAUhOruhIv-0FzkRYUpw14lv9BCw8d8qa0&_nc_ohc=P2jIon36gp4Q7kNvwE6Ndl3&_nc_oc=Adm1LmanqGVUCQSky_9Jyf27VZ3A9snyO2TrtRx7W9lqv8zIJgSDDOVLEkqZ8UsY0aXZmFKX93QWO4gk4gFTGn1u&_nc_zt=23&_nc_ht=scontent-mia3-3.xx&_nc_gid=kZVNhbVKe3POvXkgH1GbfA&oh=00_AfoJI2_IbIgmDqfx7A_e_I7f31kY4ACM48oEsALtfas7PQ&oe=695D9FD3" group-title="BOLIVIA",6 Wise Tv
