@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://scontent-mia3-1.xx.fbcdn.net/v/t39.30808-6/427882744_948398820621755_5453644342749196534_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGGMcxJrE3GAGvr6azPGHy4jRTw9_LHcb2NFPD38sdxvSd2obagraYxg6bobgTJH20&_nc_ohc=uYeeK1vAsOoQ7kNvwEOR_6s&_nc_oc=AdmUYVc60kO6Cels5AWYWlHjYIVApcto8OP1phdkM0Do4fe6396S2gATv9lLBsGRA7BBmfRbdFrqA2t3uOFtKh7d&_nc_zt=23&_nc_ht=scontent-mia3-1.xx&_nc_gid=ZUrsLEVEV5-pZeU1GXCimg&oh=00_AfruOR7Bg8eZOyAWqA7AjkbqMJP_B_r6GebmPVGRYKY1LQ&oe=695DB029" group-title="ARGENTINA",Neo TV
+https://videostream.shockmedia.com.ar:19360/neotvdigital/neotvdigital.m3u8
 #EXTINF:-1 tvg-logo="https://www-storage.13.cl/default/logos/logos-13.svg" group-title="CHILE",13 Realities
 https://origin.dpsgo.com/ssai/event/g7_JOM0ORki9SR5RKHe-Kw/master.m3u8
 #EXTINF:-1 tvg-logo="https://www-storage.13.cl/default/logos/logos-13.svg" group-title="PREMIUM",13 TELESERIES
