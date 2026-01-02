@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://www.ntv.com.mx/8ntv/wp-content/uploads/2023/06/8NTV.png" group-title="MEXICO",8 N TV
+https://60417ddeaf0d9.streamlock.net/ntv/videontv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://8lamarinatv.com/wp-content/uploads/2018/05/8lamarinatv.png" group-title="ARGENTINA",8 La Marina Tv
 https://streaming005.gestec-video.com/hls/canal24.m3u8
 #EXTINF:-1 tvg-logo="https://7televalencia.com/wp-content/uploads/2025/02/Logo-7-televalencia-Naranja-letras-negras-y-naranja_356x86.png" group-title="ESPAÑA",7 TeleValencia
