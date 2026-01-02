@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://www.a24.com/assets/img/296/header-logo-v2.svg" group-title="ARGENTINA",A 24
+https://g5.vxral-slo.transport.edge-access.net/a12/ngrp:a24-100056_all/playlist.m3u8?sense=true
 #EXTINF:-1 tvg-logo="https://scontent-mia3-3.xx.fbcdn.net/v/t39.30808-6/472232649_1094481942475847_6132521066289480040_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeE56SzN_eOi-7Y_LqdMEkFBGIhY0StTVK4YiFjRK1NUrhAi8hCr7iATTHpK9a-uUYE&_nc_ohc=snv4G7p_H1UQ7kNvwHJhpiH&_nc_oc=AdnrAJlMjMd3JJ_c9P4roZjxhUtr2D2JX_87_rJJWLM03lKjd9a7Zwd_grMMHpdY-YjQwVGYpLw3e6JatxQ3BuKP&_nc_zt=23&_nc_ht=scontent-mia3-3.xx&_nc_gid=GDwA2MAsr98fQNaG1K0S-g&oh=00_Afo4uPhIJRmWl9qGyPb2gKq5qddsjU2fJbyRBlxTivw48w&oe=695D9E08" group-title="COSTA RICA",360 RFTV
 https://acceso.mediosdecostarica.com:3638/live/360rftvcrlive.m3u8
 #EXTINF:-1 tvg-logo="https://files-101tv-londres.s3-accelerate.amazonaws.com/2024/11/101-Positive.svg" group-title="ESPAÑA",101tv Axarquia
