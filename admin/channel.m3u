@@ -7,7 +7,7 @@ https://streamtv.intervenhosting.net:3040/hybrid/play.m3u8
 https://5fc584f3f19c9.streamlock.net/agrotendencia/videoagrotendencia_hls1/playlist.m3u8
 #EXTINF:-1 tvg-logo="" group-title="CHILE",AE RADIO TV
 https://tls-cl.cdnz.cl/aeradio/live/playlist.m3u8
-#EXTINF:-1 tvg-logo="" group-title="MEXICO",ADN 40
+#EXTINF:-1 tvg-logo="https://image.roku.com/blog/wp-content/uploads/2023/08/Screenshot-2023-08-04-at-11.04.47-AM.png" group-title="NOTICIAS",ADN 40
 https://mdstrm.com/live-stream-playlist/60b578b060947317de7b57ac.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/S69lDu4.png" group-title="HONDURAS",ACTIVA TV
 https://streamtv.mediasector.es/hls/activatv/index.m3u8
