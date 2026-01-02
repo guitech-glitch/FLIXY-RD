@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnBa42_2gzblx2cy4AZzjSRRnGYbMq9PkeEr78QEW1&s" group-title="DEPORTES VIP",Dazn Combat
+https://dazn-combat-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-dazn-combat-rakuten/CDN/master.m3u8
 #EXTINF:-1 tvg-logo="https://share.google/t5WPpoCZIbeHfTRUx" group-title="MEXICO",AZTECA MUNDO
 https://api-ott-azteca-azt.ottera.tv/loggingmediaurlpassthrough/a.m3u8?version=12.5&id=648&device_type=desktop&platform=web&partner=internal&language=es&connection=wifi&max_bitrate=10000&getads=getads&custom_param_0=&custom_param_1=desktop&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=web&custom_param_6=South%2520America&timestamp=1680500773&ip=152.173.221.246&override_expiration=1500&sign=CwS%2BtBJivNJWwOy21g2IDDq3IG471%2BKCr2sC9fSWzHA%3D
 #EXTINF:-1 tvg-logo="https://i.ibb.co/2YvKhjW4/Quisqueya-17-AZUL.png" group-title="REP. DOMINICANA",Canal 17 RTVD
