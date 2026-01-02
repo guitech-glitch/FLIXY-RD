@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://www.12tv.es/wp-content/uploads/2019/09/LOGO-NUEVO-12TV.jpg" group-title="ESPAÑA",12 TV
+https://stream-us-east-1.getpublica.com/cl/260102d5bt92hir3j6imtu5th0/1280x720_1500000_0_f.m3u8
 #EXTINF:-1 tvg-logo="https://www.ntv.com.mx/8ntv/wp-content/uploads/2023/06/8NTV.png" group-title="MEXICO",8 N TV
 https://60417ddeaf0d9.streamlock.net/ntv/videontv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://8lamarinatv.com/wp-content/uploads/2018/05/8lamarinatv.png" group-title="ARGENTINA",8 La Marina Tv
