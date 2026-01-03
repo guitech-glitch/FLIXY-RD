@@ -3,7 +3,7 @@
 https://tv.livestreaminggroup.info:3513/live/canal35live.m3u8
 #EXTINF:-1 tvg-logo="https://aguacatetv.com/wp-content/uploads/2025/03/LOGO-UNIFORME-DEFINITIVO-300x200-1.png" group-title="VENEZUELA",Aguacate TV
 https://streamtv.intervenhosting.net:3040/hybrid/play.m3u8
-#EXTINF:-1 tvg-logo="https://agrotendencia.tv/wp-content/uploads/2025/03/logoattv.webp" group-title="VENEZUELA",Agrotendencia
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/LOGO_AGROTENDENCIA.png/330px-LOGO_AGROTENDENCIA.png" group-title="VENEZUELA",Agrotendencia
 https://5fc584f3f19c9.streamlock.net/agrotendencia/videoagrotendencia_hls1/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://www.aeradio.cl/wp-content/uploads/2022/11/logo2025.png" group-title="CHILE",AE RADIO TV
 https://tls-cl.cdnz.cl/aeradio/live/playlist.m3u8
