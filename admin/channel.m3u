@@ -219,6 +219,10 @@ https://live20.bozztv.com/giatv/giatv-adoram/adoram/chunks.m3u8
 https://live20.bozztv.com/akamaissh101/ssh101/guaymatetv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/lNpgFAU.png" group-title="REP. DOMINICANA",VALLEVISION
 https://streaming.telecablecentral.com.do/Vallevision/ValleHD/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/4uV90gw.png" group-title="REP. DOMINICANA",CONSTANZA TV
+https://live20.bozztv.com/akamaissh101/ssh101/ctv8hd/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/DHyRWc0.png" group-title="REP. DOMINICANA",TV MONTAÑA
+https://live20.bozztv.com/akamaissh101/ssh101/tvmontanahd/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/VqxSsZD.png" group-title="REP. DOMINICANA",ELIAS PIÑA TV
 https://cloud2.streaminglivehd.com:1936/8078/8078/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/isXlMAh.png" group-title="REP. DOMINICANA",CANANGA VISION
